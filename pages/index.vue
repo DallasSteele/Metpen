@@ -6,7 +6,11 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/images/index/bowset.png" class="d-block w-100 rounded" alt="slider1">
+      <img src="/images/index/hero-image.jpg" class="d-block w-100 rounded custom-image" alt="slider1">
+      <div class="overlay-text">
+        <h1>Tidy Tidys</h1>
+        <p>Description</p>
+      </div>
     </div>
     <div class="carousel-item">
       <img src="/images/index/isei1.png" class="d-block w-100" alt="slider2">
@@ -26,45 +30,36 @@
 </div>
 
 <div class="container">
-  <h1 class="mt-4 mb-3">Choose Services</h1>
-  <div class="container text-left">
-  <div class="row row-cols-3">
-    <a href="" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><div class="col mb-4"><img src="/images/index/owl.jpg" class="img-fluid" alt="pilihan 1"><h4>Owl</h4></div></a>
-    <a href="" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><div class="col mb-4"><img src="/images/index/lion2.jpg" class="img-fluid" alt="pilihan 2"><h4>Lion</h4></div></a>
-    <a href="" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><div class="col mb-4"><img src="/images/index/olw.jpg" class="img-fluid" alt="pilihan 3"><h4>Owl 2</h4></div></a>
-    <a href="" class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><div class="col mb-4"><img src="/images/index/tiger.jpg" class="img-fluid" alt="pilihan 4"><h4>Tiger</h4></div></a>
-
-      <!-- DEMO 2-->
-  <div class="py-5">
-    <h3 class="font-weight-bold mb-0">Demo 2</h3>
-    <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    <div class="row">
-      <!-- DEMO 2 Item-->
-      <div class="col-lg-6 mb-3 mb-lg-0">
-        <div class="hover hover-2 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786258/hoverSet-2_lt7geh.jpg" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-2-content px-5 py-4">
-            <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-            <p class="hover-2-description text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
-          </div>
+    <h1 class="mt-4 mb-4">Choose Services</h1>
+    <div class="container text-left">
+      <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+        <div class="col">
+          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/carpet-page">
+            <img src="/images/index/carpet-laundry.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 1">
+            <h4 class="pt-3">Carpet Laundry</h4>
+          </NuxtLink>
         </div>
-      </div>
-
-      <!-- DEMO 2 Item-->
-      <div class="col-lg-6">
-        <div class="hover hover-2 text-white rounded"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570786261/hoverSet-1_pha5qe.jpg" alt="">
-          <div class="hover-overlay"></div>
-          <div class="hover-2-content px-5 py-4">
-            <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Image </span>Caption</h3>
-            <p class="hover-2-description text-uppercase mb-0">Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit.</p>
-          </div>
+        <div class="col">
+          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/home-page">
+            <img src="/images/index/home-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 2">
+            <h4 class="pt-3">Home Clean</h4>
+          </NuxtLink>
+        </div>
+        <div class="col">
+          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/pool-page">
+            <img src="/images/index/pool-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 3">
+            <h4 class="pt-3">Pool Clean</h4>
+          </NuxtLink>
+        </div>
+        <div class="col">
+          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/lavatory-page">
+            <img src="/images/index/lavatory.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 4">
+            <h4 class="pt-3">Lavatory</h4>
+          </NuxtLink>
         </div>
       </div>
     </div>
   </div>
-  </div>
-</div>
-</div>
 
 
 
@@ -87,6 +82,41 @@ export default {
 <style scoped>
 
 /* DEMO GENERAL ============================== */
+.custom-image {
+  height: 52rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  overflow: hidden;
+  position: relative;
+  transform: scale(1.09)
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:antiquewhite;
+  padding: 10px;
+}
+
+.zoom-effect-container {
+      overflow: hidden;
+    }
+
+    .zoom-effect-container img {
+      transition: transform 0.7s ease;
+    }
+
+    .zoom-effect-container:hover img {
+      transform: scale(1.05);
+    }
+
+    .custom-img-size{
+      width: 65%;
+    }
+
 .hover {
   overflow: hidden;
   position: relative;

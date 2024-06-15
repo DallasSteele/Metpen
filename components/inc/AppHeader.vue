@@ -22,6 +22,9 @@
         <li class="nav-item">
           <NuxtLink class="nav-link" to="/contact">Contact</NuxtLink>
         </li>
+        <li class="nav-item">
+          <NuxtLink class="nav-link" to="/cart">Cart</NuxtLink>
+        </li>
       </ul>
           </div>
   </div>
