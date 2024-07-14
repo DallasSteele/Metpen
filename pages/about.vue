@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container mt-5">
     <h1>About Us!</h1>
   </div>
 </template>
@@ -16,5 +16,7 @@ export default {
 </script>
 
 <style>
-
+ .container {
+  max-width: 800px;
+}
 </style>
