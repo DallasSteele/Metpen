@@ -69,6 +69,7 @@
 
 <script>
 export default {
+  middleware: 'auth',
   name: 'IndexPage',
   head() {
     return {
