@@ -27,16 +27,23 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+<hr>
+<div class="mx-4">
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> Home Clean</a> 
+</div>
+<hr>
   
     <h2 class="my-5 mx-4">Pilih Penyedia Jasa</h2>
   <div class="row row-cols-1 row-cols-md-3 mx-2">
     <div class="col mb-4">
-      <NuxtLink to="/home-clean/peru4">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/peru4">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/home-clean/homeclean1.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Home Shine</h5>
+          <p class="card-text">Jl. Thamrin No. 24-25, Jakarta Pusat, DKI Jakarta 10230</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
@@ -44,24 +51,24 @@
     </div>
     <!-- Repeat the above div.col.mb-4 for more cards -->
     <div class="col mb-4">
-      <NuxtLink to="/home-clean/peru5">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/peru5">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/home-clean/homeclean2.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Sparkle</h5>
+          <p class="card-text">Jl. Braga No.11, Jakarta Barat, DKI Jakarta 10221</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
     </NuxtLink>
     </div>
     <div class="col mb-4">
-      <NuxtLink to="/home-clean/peru6">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/peru6">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/home-clean/homeclean3.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Pristine House</h5>
+          <p class="card-text">Jl. Demor No.66, Jakarta Barat, DKI Jakarta 11220</p>
           <p class="card-text">Rating</p>
         </div>
       </button>

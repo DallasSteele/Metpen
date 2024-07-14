@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container mt-5">
       <h1>Contact Us!</h1>
     </div>
   </template>
@@ -16,5 +16,7 @@
   </script>
   
   <style>
-  
+  .container {
+  max-width: 800px;
+}
   </style>

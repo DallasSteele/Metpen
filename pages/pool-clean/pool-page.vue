@@ -27,16 +27,23 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+<hr>
+<div class="mx-4">
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> Pool Clean</a> 
+</div>
+<hr>
   
     <h2 class="my-5 mx-4">Pilih Penyedia Jasa</h2>
   <div class="row row-cols-1 row-cols-md-3 mx-2">
     <div class="col mb-4">
-      <NuxtLink to="/pool-clean/peru10">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/peru10">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/pool/pool1.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">AquaPure Pool Cleaning</h5>
+          <p class="card-text">Jl. Kebon Sirih No.10, Jakarta Pusat, DKI Jakarta 10340</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
@@ -44,24 +51,24 @@
     </div>
     <!-- Repeat the above div.col.mb-4 for more cards -->
     <div class="col mb-4">
-      <NuxtLink to="/pool-clean/peru11">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/peru11">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/pool/pool2.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Crystal Clear PS</h5>
+          <p class="card-text">Jl. Riau No.2, Jakarta Selatan, DKI Jakarta 10311 </p>
           <p class="card-text">Rating</p>
         </div>
       </button>
     </NuxtLink>
     </div>
     <div class="col mb-4">
-      <NuxtLink to="/pool-clean/peru12">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/peru12">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/pool/pool3.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Blue Wave Pool Care</h5>
+          <p class="card-text">Jl. Pinang No.88-89, Jakarta Timur, DKI Jakarta</p>
           <p class="card-text">Rating</p>
         </div>
       </button>

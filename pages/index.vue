@@ -13,10 +13,10 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/images/index/isei1.png" class="d-block w-100" alt="slider2">
+      <img src="/images/index/cleaning-logo.jpg" class="d-block w-100 rounded custom-image" alt="slider2">
     </div>
     <div class="carousel-item">
-      <img src="/images/index/isei2.png" class="d-block w-100" alt="slider3">
+      <img src="/images/index/cleaning-carpet-pool.jpg" class="d-block w-100 rounded custom-image" alt="slider3">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

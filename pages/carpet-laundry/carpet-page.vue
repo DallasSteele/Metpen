@@ -40,7 +40,7 @@
     <div class="col mb-4">
       <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/peru1">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/carpet-1.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/carpet/carpet-1.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
           <h5 class="card-title">Karpet CleanPro</h5>
           <p class="card-text">Jl. Merdeka No.45, Jakarta Pusat, DKI Jakarta 10011</p>
@@ -52,7 +52,7 @@
     <div class="col mb-4">
       <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/peru2">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/carpet-company2.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/carpet/carpet-company2.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
           <h5 class="card-title">FreshRug Laundry</h5>
           <p class="card-text">Jl. Diponegoro No.12, Jakarta Selatan, Jawa Barat 40115</p>
@@ -64,7 +64,7 @@
     <div class="col mb-4">
       <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/peru3">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/carpet3.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/carpet/carpet3.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
           <h5 class="card-title">MegaKarpet Wash</h5>
           <p class="card-text">Jl. Sudirman No.88, Jakarta Timur, DKI Jakarta 60271</p>

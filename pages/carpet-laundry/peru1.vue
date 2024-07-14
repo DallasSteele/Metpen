@@ -18,7 +18,7 @@
         <p class="text-muted">Rating</p>
       </div>
       <div class="col-md-4">
-        <img src="/images/index/carpet-1.jpg" class="custom-image rounded mx-auto d-block" style="width: 200px; height: 200px" alt="Nama Perusahaan">
+        <img src="/images/index/carpet/carpet-1.jpg" class="custom-image rounded mx-auto d-block" style="width: 200px; height: 200px" alt="Nama Perusahaan">
       </div>
     </div>
 

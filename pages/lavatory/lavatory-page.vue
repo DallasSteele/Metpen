@@ -27,16 +27,23 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+<hr>
+<div class="mx-4">
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> Lavatory</a> 
+</div>
+<hr>
   
     <h2 class="my-5 mx-4">Pilih Penyedia Jasa</h2>
   <div class="row row-cols-1 row-cols-md-3 mx-2">
     <div class="col mb-4">
-      <NuxtLink to="/lavatory/peru7">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/peru7">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/lavatory/lavatory2.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Lavatory Fresh</h5>
+          <p class="card-text">Jl. Sudirman No.42, Jakarta Pusat, DKI Jakarta 10210</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
@@ -44,24 +51,24 @@
     </div>
     <!-- Repeat the above div.col.mb-4 for more cards -->
     <div class="col mb-4">
-      <NuxtLink to="/lavatory/peru8">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/peru8">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/lavatory/lavatory1.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Sparkle Santos</h5>
+          <p class="card-text">Jl. Kalimantan No.30-31, Jakarta Utara, DKI Jakarta 10223</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
     </NuxtLink>
     </div>
     <div class="col mb-4">
-      <NuxtLink to="/lavatory/peru9">
+      <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/peru9">
       <button class="card h-100 card-button zoom-effect-container ">
-        <img src="/images/index/memories.png" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
+        <img src="/images/index/lavatory/lavatory3.jpg" class="card-img-top custom-img-size rounded mx-auto d-block" style="width: 15rem; height: 15rem;" alt="Nama Perusahaan Mitra">
         <div class="card-body">
-          <h5 class="card-title">Nama Perusahaan Mitra</h5>
-          <p class="card-text">Lokasi</p>
+          <h5 class="card-title">Lavish LapLav</h5>
+          <p class="card-text">Jl. Muara Buntu No. 2, Jakarta Timur, DKI Jakarta 13020</p>
           <p class="card-text">Rating</p>
         </div>
       </button>
