@@ -1,5 +1,5 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers
   head: {
     title: 'Marketplace Jasa',
     htmlAttrs: {
@@ -12,16 +12,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon',
-       type: 'image/x-icon', 
-       href: '/butak.jpg' 
-      },
-      { rel: 'stylesheet',
-       href: '/css/bootstrap.min.css' 
-      },
-      { rel: 'stylesheet',
-      href: '/css/custom.css' 
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/butak.jpg' },
+      { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: '/css/custom.css' }
     ],
     script: [
       {
@@ -31,34 +24,52 @@ export default {
     ]
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  // Global CSS
+  css: [],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-  ],
+  // Plugins to run before rendering page
+  plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
+  // Auto import components
   components: true,
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-  ],
+  // Modules for dev and build (recommended)
+  buildModules: [],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // Modules
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next'
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
+  // Axios module configuration
   axios: {
-    // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'http://localhost:3001',
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  // Auth module configuration
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'token',
+          global: true,
+          // required: true,
+          // type: 'Bearer'
+        },
+        user: {
+          property: 'user',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: { url: '/api/login', method: 'post', propertyName: 'token' },
+          logout: { url: '/api/logout', method: 'post' },
+          user: { url: '/api/user', method: 'get', propertyName: 'user' }
+        }
+      }
+    }
+  },
+
+  // Build Configuration
+  build: {}
 }

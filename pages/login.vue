@@ -1,4 +1,5 @@
 <template>
+<<<<<<< Updated upstream
   <div class="container mt-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
@@ -16,22 +17,45 @@
         </form>
       </div>
     </div>
+=======
+  <div>
+    <h1>Login</h1>
+    <form @submit.prevent="login">
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" v-model="email" id="email" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" v-model="password" id="password" />
+      </div>
+      <button type="submit">Login</button>
+    </form>
+>>>>>>> Stashed changes
   </div>
 </template>
 
 <script>
+<<<<<<< Updated upstream
 import AuthService from '@/services/auth';
 
+=======
+>>>>>>> Stashed changes
 export default {
   data() {
     return {
       email: '',
       password: ''
+<<<<<<< Updated upstream
     };
+=======
+    }
+>>>>>>> Stashed changes
   },
   methods: {
     async login() {
       try {
+<<<<<<< Updated upstream
         const user = await AuthService.login({ email: this.email, password: this.password });
         this.$router.push(this.getRedirectPath(user.role));
       } catch (error) {
@@ -52,4 +76,19 @@ export default {
     }
   }
 };
+=======
+        await this.$auth.loginWith('local', {
+          data: {
+            email: this.email,
+            password: this.password
+          }
+        })
+        this.$router.push('/profile')
+      } catch (error) {
+        console.error(error)
+      }
+    }
+  }
+}
+>>>>>>> Stashed changes
 </script>
