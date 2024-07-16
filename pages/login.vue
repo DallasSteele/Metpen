@@ -41,11 +41,11 @@ export default {
     getRedirectPath(role) {
       switch (role) {
         case 'admin':
-          return '/admin-dashboard';
+          return '/admin';
         case 'associate':
           return '/associate-dashboard';
         case 'customer':
-          return '/customer-dashboard';
+          return '/index';
         default:
           return '/';
       }
