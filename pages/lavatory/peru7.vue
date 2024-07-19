@@ -38,7 +38,7 @@
       <h2>Cart</h2>
       <ul class="list-group">
         <li v-for="(item, index) in cart" :key="index" class="list-group-item d-flex justify-content-between align-items-center">
-          {{ item.name }} - Rp. {{ item.price }}
+          {{ item.name }} - Rp. {{ item.price }} - {{ item.description }} - {{ item.image }}
         </li>
       </ul>
       <div class="mt-3 mb-5">

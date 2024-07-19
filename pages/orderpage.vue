@@ -1,23 +1,29 @@
 <template>
   <div class="container mt-5">
+    <h1>Payment Order</h1>
     <div class="row">
       <div class="col-md-8">
         <div class="card mb-4">
           <div class="row no-gutters">
             <div class="col-md-4">
-              <img src="/images/index/test.jpg" class="card-img" alt="Service Image">
+            <!-- <img :src="service.image" class="card-img" alt="Service Image"> -->
             </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title">Rumah Apartemen Kecil (1-2 Kamar Tidur)</h5>
-                <p class="card-text">Pembersihan Rumah mencakup menyapu dan mengepel lantai, membersihkan debu dari furnitur, kaca, dan cermin, mengurut tempat tidur, membersihkan dan mendesinfeksi permukaan dapur serta peralatan luar, mencuci piring, membersihkan wastafel, toilet, dan shower, serta menganti handuk jika diminta. Area umum seperti koridor dan tangga juga dibersihkan, termasuk pintu, bingkai, dan sakelar lampu dari debu dan noda.</p>
-              </div>
-            </div>
+            <div v-if="cart.length">
+      <ul class="list-group">
+        <li v-for="(item, index) in cart" :key="index" class="list-group-item d-flex justify-content-between align-items-center">
+          {{ item.name }} - Rp. {{ item.price }} <br> {{ item.description }} 
+          <img :src="item.image" alt="Service Image" class="img-thumbnail" style="width: 50px; height: 50px; margin-right: 10px;">
+        </li>
+      </ul>
+      <div class="mt-3 mb-5">
+        <h3>Total: Rp. {{ totalPrice }}</h3>
+      </div>
+    </div>
           </div>
         </div>
 
-        <form @submit.prevent="placeOrder">
-          <div class="form-group">
+     <!--  <form @submit.prevent="placeOrder">
+           <div class="form-group">
             <label for="fullName">Nama Lengkap</label>
             <input type="text" class="form-control" id="fullName" v-model="form.fullName" required>
           </div>
@@ -37,15 +43,15 @@
           <div class="card mt-4">
             <div class="card-body">
               <h5 class="card-title">Rincian Harga</h5>
-              <p class="card-text">Harga Layanan: Rp.300.000</p>
-              <p class="card-text">Biaya Transportasi: Rp.10.000</p>
+              <p class="card-text">Harga Layanan: {{ service.price }}</p>
+              <p class="card-text">Biaya Transportasi: {{ service.transportFee }}</p>
               <hr>
-              <h5 class="card-title">Total Harga: Rp.310.000</h5>
+              <h5 class="card-title">Total Harga: {{ totalPrice }}</h5>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-primary btn-block mt-4 mb-5">PESAN SEKARANG</button>
-        </form>
+          <button type="submit" class="btn btn-primary btn-block mt-4">PESAN SEKARANG</button>
+        </form>-->
       </div>
     </div>
   </div>
@@ -53,7 +59,18 @@
 
 <script>
 export default {
-  data() {
+  props: {
+    service: {
+      type: Object,
+      required: true
+    }
+  },
+   data() {
+    return {
+      cart: []
+    };
+  },
+  datauser() {
     return {
       form: {
         fullName: '',
@@ -63,11 +80,21 @@ export default {
       }
     };
   },
+   computed: {
+    totalPrice() {
+      return this.cart.reduce((total, item) => total + item.price, 0);
+    }
+  },
   methods: {
-    placeOrder() {
-      // Handle the order placement logic here
-      console.log('Order placed:', this.form);
-      alert('Order placed successfully!');
+    removeFromCart(index) {
+      this.cart.splice(index, 1);
+      localStorage.setItem('cart', JSON.stringify(this.cart));
+    }
+  },
+  mounted() {
+    const savedCart = JSON.parse(localStorage.getItem('cart'));
+    if (savedCart) {
+      this.cart = savedCart;
     }
   }
 };

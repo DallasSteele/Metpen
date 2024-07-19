@@ -28,7 +28,9 @@ export default {
     handleAddToCart() {
       const item = {
         name: this.name,
-        price: this.price
+        description: this.description,
+        price: this.price,
+        image: this.image
       };
       this.$emit('add-to-cart', item);
     }
