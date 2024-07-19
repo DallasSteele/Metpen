@@ -38,7 +38,8 @@
       <h2>Cart</h2>
       <ul class="list-group">
         <li v-for="(item, index) in cart" :key="index" class="list-group-item d-flex justify-content-between align-items-center">
-          {{ item.name }} - Rp. {{ item.price }} - {{ item.description }} - {{ item.image }}
+          {{ item.name }} - Rp. {{ item.price }} <br> {{ item.description }} 
+          <img :src="item.image" alt="Service Image" class="img-thumbnail" style="width: 50px; height: 50px; margin-right: 10px;">
         </li>
       </ul>
       <div class="mt-3 mb-5">
