@@ -1,11 +1,13 @@
 <template>
-  <div class="wrapper" v-if="show">
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="shadow"></div>
-    <div class="shadow"></div>
-    <div class="shadow"></div>
+  <div v-if="show" class="loader-overlay">
+    <div class="wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+      <div class="shadow"></div>
+    </div>
   </div>
 </template>
 
@@ -19,7 +21,20 @@ export default {
   }
 }</script>
 
-<style>
+<style scoped>
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
 .wrapper {
   width: 200px;
   height: 60px;
