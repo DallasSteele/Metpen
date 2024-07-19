@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <button class="btn btn-secondary mb-3" @click="goBack"> Back</button>
+    <button class="btn btn-outline-secondary mb-3" @click="goBack"> Back</button>
     <h1>Cart</h1>
     <div v-if="cart.length">
       <ul class="list-group">
@@ -17,22 +17,24 @@
       <p>Your cart is empty.</p>
     </div>
 
-    <a href="/orderpage" ><button>
+    <a href="/orderpage" class="link-underline-opacity-0" ><button>
   <span class="span-mother">
-    <span>B</span>
-    <span>u</span>
-    <span>t</span>
-    <span>t</span>
-    <span>o</span>
+    <span>P</span>
+    <span>a</span>
+    <span>y</span>
+    <span>m</span>
+    <span>e</span>
     <span>n</span>
+    <span>t</span>
   </span>
   <span class="span-mother2">
-    <span>B</span>
-    <span>u</span>
-    <span>t</span>
-    <span>t</span>
-    <span>o</span>
+    <span>P</span>
+    <span>a</span>
+    <span>y</span>
+    <span>m</span>
+    <span>e</span>
     <span>n</span>
+    <span>t</span>
   </span>
 </button></a>
 
@@ -77,12 +79,12 @@ export default {
 button {
   font-weight: bold;
   color: white;
-  border-radius: 2rem;
+  border-radius: 1rem;
   cursor: pointer;
   width: 95.02px;
-  height: 42.66px;
+  height: 37px;
   border: none;
-  background-color: #3653f8;
+  background-color: #1db21f;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +101,7 @@ button:hover .span-mother {
 }
 
 button:hover .span-mother span {
-  transform: translateY(1.2em);
+  transform: translateY(1.4em);
 }
 
 button .span-mother span:nth-child(1) {
@@ -126,6 +128,10 @@ button .span-mother span:nth-child(6) {
   transition: 0.7s;
 }
 
+button .span-mother span:nth-child(7) {
+  transition: 0.8s;
+}
+
 button .span-mother2 {
   display: flex;
   position: absolute;
@@ -133,7 +139,7 @@ button .span-mother2 {
 }
 
 button .span-mother2 span {
-  transform: translateY(-1.2em);
+  transform: translateY(-1.4em);
 }
 
 button:hover .span-mother2 span {
@@ -162,6 +168,10 @@ button .span-mother2 span:nth-child(5) {
 
 button .span-mother2 span:nth-child(6) {
   transition: 0.7s;
+}
+
+button .span-mother2 span:nth-child(7) {
+  transition: 0.8s;
 }
 
 
