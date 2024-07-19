@@ -1,5 +1,6 @@
 <template>
   <div class="container mt-5">
+    <button class="btn btn-secondary mb-3" @click="goBack"> Back</button>
     <h1>Cart</h1>
     <div v-if="cart.length">
       <ul class="list-group">
@@ -51,6 +52,9 @@ export default {
     }
   },
   methods: {
+    goBack() {
+      this.$router.back();
+    },
     removeFromCart(index) {
       this.cart.splice(index, 1);
       localStorage.setItem('cart', JSON.stringify(this.cart));

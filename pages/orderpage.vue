@@ -1,6 +1,7 @@
 <template>
   <div class="container mt-5">
-    <h1>Payment Order</h1>
+    <button class="btn btn-outline-secondary mb-3" @click="goBack"> Back</button>
+    <h1>Payment </h1>
     <div class="row">
       <div class="col-md-8">
         <div class="card mb-4">
@@ -86,6 +87,10 @@ export default {
     }
   },
   methods: {
+      goBack() {
+      this.$router.back();
+    },
+
     removeFromCart(index) {
       this.cart.splice(index, 1);
       localStorage.setItem('cart', JSON.stringify(this.cart));

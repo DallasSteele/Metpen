@@ -4,6 +4,7 @@
 <div>
   <section class="about-section">
     <div class="container">
+    <button class="btn btn-outline-secondary mb-3" @click="goBack"> Back</button>
       <h1 class="section-title">About Us</h1>
       <div class="row">
         <div class="col-md-6">
@@ -134,6 +135,11 @@ export default {
           url: '#'
         }
       ]
+    }
+  },
+  methods: {
+    goBack() {
+      this.$router.back();
     }
   }
 }

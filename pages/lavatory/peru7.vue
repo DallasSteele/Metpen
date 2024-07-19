@@ -32,7 +32,9 @@
       :price="service.price"
       :image="service.image"
       @add-to-cart="addToCart"
+      @buy-now="buyNow"
     />
+
 
     <div v-if="cart.length" class="mt-5">
       <h2>Cart</h2>
@@ -44,6 +46,7 @@
       </ul>
       <div class="mt-3 mb-5">
         <h3>Total: Rp. {{ totalPrice }}</h3>
+         <a href="/orderpage"><button class="btn btn-primary " >Go To Payment</button></a>
       </div>
     </div>
   </div>
@@ -51,6 +54,8 @@
 
 <script>
 import ServiceCard from '@/components/inc/ServiceCard.vue';
+
+
 
 export default {
   components: {
@@ -91,6 +96,10 @@ export default {
       this.cart.push(item);
       localStorage.setItem('cart', JSON.stringify(this.cart));
       alert('Added to cart');
+    },
+    buyNow(service) {
+      this.addToCart(service);
+      this.$router.push('/orderpage');
     }
   },
   mounted() {

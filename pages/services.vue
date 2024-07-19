@@ -1,4 +1,6 @@
 <template>
+<div class="container">
+<button class="btn btn-outline-secondary mb-3 mt-3" @click="goBack"> Back</button>
   <div class="services">
     <h2>Our Services!</h2>
     <div class="services-content">
@@ -23,6 +25,7 @@
       </ul>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -32,10 +35,12 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  background-color: #8aefed;
+}
 .services {
   text-align: center;
   padding: 50px 0;
-  background-color: #8aefed;
 }
 
 .services-content {

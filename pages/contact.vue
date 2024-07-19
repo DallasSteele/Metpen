@@ -1,5 +1,6 @@
 <template>
  <div class="container">
+    <button class="btn btn-outline-secondary mb-3 mt-3" @click="goBack"> Back</button>
   <div class="contact-us">
     <h2>Contact Us!</h2>
     <div class="contact-content">
@@ -18,22 +19,27 @@
 <script>
 export default {
   name: "Contact",
+  methods: {
+    goBack() {
+      this.$router.back();
+    }
+  }
 };
 </script>
 
 <style scoped>
-.container{
+.container, .contact-us, .contact-content{
  background-color: #8aefed;
+ padding: 80px 0;
 }
 .contact-us {
   text-align: center;
-  padding: 80px 0;
 }
 
 .contact-content {
   display: inline-block;
   max-width: 600px;
-  text-align: left;
+  text-align: center;
 }
 
 .contact-content h3 {
