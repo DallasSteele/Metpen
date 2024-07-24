@@ -21,13 +21,19 @@ export default {
       },
       { rel: 'stylesheet',
       href: '/css/custom.css' 
-      }
+      },
+      { rel: 'stylesheet', href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: 'https://kit.fontawesome.com/a076d05399.css' }
     ],
     script: [
       {
         src: '/js/bootstrap.bundle.min.js',
+        src: 'https://kit.fontawesome.com/a076d05399.js',
         type: 'text/javascript'
       }
+    ],
+    plugins: [
+      '~/plugins/fontawesome.js'
     ]
   },
 
@@ -37,6 +43,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/fontawesome.js'
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Pricing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #ffffff;
+            color: #343a40;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h2 {
+            color: #343a40;
+            margin-bottom: 30px;
+        }
+        .sidebar .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .sidebar .profile img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .sidebar .profile .profile-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar .profile .profile-info .view-profile {
+            display: none;
+            color: #black;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        .sidebar .profile:hover .profile-info .view-profile {
+            display: block;
+        }
+        .sidebar a {
+            color: #343a40;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .pricing-table {
+            margin-top: 20px;
+        }
+        .pricing-table th, .pricing-table td {
+            text-align: center;
+        }
+        .btn-save {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mitra Panel</h2>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="profile-info">
+                <p>Rachel</p>
+                <small>Mitra</small>
+                <a href="profile.html" class="view-profile">Lihat Profil</a>
+            </div>
+        </div>
+        <a href="create-listings.html">Create Listings</a>
+        <a href="set-pricing.html">Set Pricing</a>
+        <a href="manage-orders.html">Manage Orders</a>
+        <button class="btn btn-dark btn-logout">Logout</button>
+    </div>
+    <div class="content">
+        <div class="navbar">
+            <h1>Set Pricing</h1>
+        </div>
+        <table class="table table-bordered pricing-table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Service ID</th>
+                    <th>Service Name</th>
+                    <th>Current Price</th>
+                    <th>New Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Home Cleaning</td>
+                    <td>$100</td>
+                    <td><input type="number" class="form-control" value="100"></td>
+                    <td><button class="btn btn-sm btn-save"><i class="fas fa-save"></i> Save</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carpet Cleaning</td>
+                    <td>$150</td>
+                    <td><input type="number" class="form-control" value="150"></td>
+                    <td><button class="btn btn-sm btn-save"><i class="fas fa-save"></i> Save</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pool Cleaning</td>
+                    <td>$200</td>
+                    <td><input type="number" class="form-control" value="200"></td>
+                    <td><button class="btn btn-sm btn-save"><i class="fas fa-save"></i> Save</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lavatory Cleaning</td>
+                    <td>$120</td>
+                    <td><input type="number" class="form-control" value="120"></td>
+                    <td><button class="btn btn-sm btn-save"><i class="fas fa-save"></i> Save</button></td>
+                </tr>
+                <!-- More rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
