@@ -1,23 +1,21 @@
+<!-- components/Footer.vue -->
 <template>
-  <div class="admin-footer">
-    <p>&copy; 2024 Tidy Tidys. All rights reserved.</p>
-  </div>
+  <footer>
+    <!-- Your footer content here -->
+    <p>&copy; 2024 Nabi ISA AS</p>
+  </footer>
 </template>
 
 <script>
 export default {
-  name: 'AdminFooter'
 }
 </script>
 
 <style scoped>
-.admin-footer {
-  background-color: #343a40;
-  color: white;
-  padding: 10px;
+footer {
+  padding: 20px;
+  background-color: #f8f9fa;
   text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  border-top: 1px solid #e9ecef;
 }
 </style>

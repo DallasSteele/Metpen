@@ -1,24 +1,29 @@
 <template>
   <div>
     <Loadingmf :show="loading" />
-    <AppHeader />
+     <Sidebar ref="sidebar" />
+      <div :class="['content', { collapsed: isSidebarCollapsed }]">
+    <Authheader />
     <Nuxt />
     <hr>
     <AppFooter />
+       </div>
   </div>
 </template>
 
 <script>
-import AppHeader from "../components/inc/AppHeader.vue";
+import Authheader from "../components/inc/Authheader.vue";
 import AppFooter from "../components/inc/AppFooter.vue";
 import Loadingmf from '~/components/inc/Loadingmf.vue';
+import SidebarVue from '~/components/inc/Sidebar.vue';
 
 
 export default {
   name: 'default',
   components: {
+    SidebarVue,
     Loadingmf,
-    AppHeader,
+    Authheader,
     AppFooter
   },
   data() {
@@ -32,13 +37,20 @@ export default {
       this.isSidebarCollapsed = !this.isSidebarCollapsed;
     }
   },
-  watch: {
+ /* watch: {
     '$route' (to, from) {
       this.loading = true;
       setTimeout(() => {
         this.loading = false;
       }, 1000); // Adjust the timeout duration as needed
     }
-  },
+  },*/
+  // async mounted() {
+    // Check if the user is authenticated
+   // const token = this.$cookies.get('auth_token');
+   // if (!token && this.$route.path !== '/auth/login' && this.$route.path !== '/auth/signup') {
+    //  this.$router.push('/auth/login');
+   // }
+ // }
 }
 </script>

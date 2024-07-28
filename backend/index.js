@@ -36,7 +36,7 @@ app.use(session({
 
 app.use(cors({
     credentials: true,
-    origin: 'http://127.0.0.1:8080' // Ganti dengan asal frontend Anda
+    origin: 'http://localhost:3000' // Ganti dengan asal frontend Anda
 }));
 
 app.use(express.json());

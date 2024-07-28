@@ -30,36 +30,36 @@
 </div>
 
 <div class="container">
-    <h1 class="mt-4 mb-4">Choose Services</h1>
-    <div class="container text-left">
-      <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-        <div class="col">
-          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/carpet-page">
-            <img src="/images/index/carpet-laundry.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 1">
-            <h4 class="pt-3">Carpet Laundry</h4>
-          </NuxtLink>
-        </div>
-        <div class="col">
-          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/home-page">
-            <img src="/images/index/home-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 2">
-            <h4 class="pt-3">Home Clean</h4>
-          </NuxtLink>
-        </div>
-        <div class="col">
-          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/pool-page">
-            <img src="/images/index/pool-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 3">
-            <h4 class="pt-3">Pool Clean</h4>
-          </NuxtLink>
-        </div>
-        <div class="col">
-          <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/lavatory-page">
-            <img src="/images/index/lavatory.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 4">
-            <h4 class="pt-3">Lavatory</h4>
-          </NuxtLink>
+      <h1 class="mt-4 mb-4">Choose Services</h1>
+      <div class="container text-left">
+        <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
+          <div class="col">
+            <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/carpet-laundry/carpet-page">
+              <img src="/images/index/carpet-laundry.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 1">
+              <h4 class="pt-3">Carpet Laundry</h4>
+            </NuxtLink>
+          </div>
+          <div class="col">
+            <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/home-clean/home-page">
+              <img src="/images/index/home-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 2">
+              <h4 class="pt-3">Home Clean</h4>
+            </NuxtLink>
+          </div>
+          <div class="col">
+            <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/pool-clean/pool-page">
+              <img src="/images/index/pool-cleaning.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 3">
+              <h4 class="pt-3">Pool Clean</h4>
+            </NuxtLink>
+          </div>
+          <div class="col">
+            <NuxtLink class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" to="/lavatory/lavatory-page">
+              <img src="/images/index/lavatory.jpg" class="img-fluid rounded custom-img-size" alt="pilihan 4">
+              <h4 class="pt-3">Lavatory</h4>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
 
@@ -69,7 +69,6 @@
 
 <script>
 export default {
-  layout: 'defaultusers',
   name: 'IndexPage',
   head() {
     return {
@@ -184,5 +183,69 @@ export default {
 
 .hover-2:hover .hover-overlay {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+}
+
+.custom-image {
+  height: 52rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  overflow: hidden;
+  position: relative;
+  transform: scale(1.09)
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: antiquewhite;
+  padding: 10px;
+}
+
+.zoom-effect-container {
+  overflow: hidden;
+}
+
+.zoom-effect-container img {
+  transition: transform 0.7s ease;
+}
+
+.zoom-effect-container:hover img {
+  transform: scale(1.05);
+}
+
+.custom-img-size {
+  width: 65%;
+}
+
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
 }
 </style>
