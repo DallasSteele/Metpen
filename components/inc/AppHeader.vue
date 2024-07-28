@@ -6,10 +6,10 @@
         <li><NuxtLink class="nav-link" to="/user">HOME</NuxtLink></li>
         <li><NuxtLink class="nav-link" to="/about">ABOUT</NuxtLink></li>
         <li><NuxtLink class="nav-link" to="/history">HISTORY</NuxtLink></li>
-        <li><NuxtLink class="nav-link" to="/orders">ORDERS</NuxtLink></li>
         <li><NuxtLink class="nav-link" to="/cart">CART</NuxtLink></li>
+        <li><NuxtLink class="nav-link" to="/orderpage">ORDERS</NuxtLink></li>
         <li>
-          <NuxtLink class="profile" to="/profile_detail" title="Click For Detail">
+          <NuxtLink class="profile" to="/profile-page" title="Click For Detail">
             <img src="/images/profile.jpg" alt="User Profile" class="profile-image">
             <div class="profile-info">
               <span class="username"></span>

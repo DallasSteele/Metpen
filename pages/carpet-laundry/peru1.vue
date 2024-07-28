@@ -83,19 +83,19 @@ export default {
           name: 'Karpet CleanPro (Kecil) ',
           description: 'Pembersihan Karpet ukuran kecil, cocok untuk karpet penerimaan tamu atau karpet depan WC dan semacamnya.',
           price: 45000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetkecil.jpg'
         },
         {
           name: 'Karpet CleanPro (Sedang + Foam)',
           description: 'Pembersihan Karpet ukuran sedang, ditambahkan dengan pembersihan menggunakan foam.',
           price: 80000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetsedang.jpg'
         },
         {
           name: 'Karpet CleanPro (Besar + Full Clean)',
           description: 'Karpet ukuran jumbo dengan alat pembersih yang lengkap mulai steam, foam, hingga steril.',
           price: 120000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetbesar.jpg'
         }
       ],
       cart: []

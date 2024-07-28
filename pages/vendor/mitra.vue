@@ -1,19 +1,6 @@
 <template>
     <div>
-      <div class="sidebar">
-        <h2>Mitra Panel</h2>
-        <div class="profile">
-          <img src="profile.jpg" alt="Profile Picture" />
-          <div>
-            <p>Rachel</p>
-            <small>Mitra</small>
-          </div>
-        </div>
-        <a href="#">Create Listings</a>
-        <a href="#">Set Pricing</a>
-        <a href="#">Manage Orders</a>
-        <button class="btn btn-dark btn-logout">Logout</button>
-      </div>
+   
       <div class="content">
         <div class="navbar">
           <h1>Dashboard</h1>
@@ -112,11 +99,12 @@
   
   <script>
   export default {
-    name: "MitraDashboard",
+    layout: 'mitralay',
+    name: "mitra",
   };
   </script>
   
-  <style scoped>
+  <style>
   body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
@@ -146,7 +134,7 @@
     text-decoration: underline;
   }
   .content {
-    margin-left: 270px;
+    margin-left: auto;
     padding: 20px;
   }
   .navbar {

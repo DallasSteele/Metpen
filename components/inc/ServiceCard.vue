@@ -2,7 +2,7 @@
   <div class="service-card">
     <div class="row">
       <div class="col-2">
-        <img :src="image" class="rounded" style="width: 110px; height: 85px;" :alt="name">
+        <img :src="image" class="rounded" style="width: 95px; height: 95px;" :alt="name">
       </div>
       <div class="col-8">
         <h5>{{ name }}</h5>

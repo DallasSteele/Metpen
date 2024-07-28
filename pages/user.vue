@@ -7,6 +7,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/images/index/hero-image.jpg" class="d-block w-100 rounded custom-image" alt="slider1">
+      
       <div class="overlay-text">
         <h1>Tidy Tidys</h1>
         <p>Description</p>
