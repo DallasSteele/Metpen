@@ -3,7 +3,7 @@
 
   <hr>
     <div class="mx-4">
-<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/user">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/carpet-laundry/carpet-page"> Carpet Laundry</a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> FreshRug Laundry</a> 
 
@@ -83,13 +83,13 @@ export default {
           name: 'FreshRug Basic Clean ',
           description: 'Pembersihan Karpet ukuran kecil, cocok untuk karpet penerimaan tamu atau karpet depan WC dan semacamnya.',
           price: 45000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetsedang.jpg'
         },
         {
           name: 'FreshRug Full Clean',
           description: 'Pembersihan Karpet ukuran sedang, ditambahkan dengan pembersihan menggunakan foam.',
           price: 80000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetbesar.jpg'
         }
       ],
       cart: []

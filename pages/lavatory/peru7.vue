@@ -3,7 +3,7 @@
 
   <hr>
     <div class="mx-4">
-<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/user">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/lavatory/lavatory-page"> Home Clean</a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> Lavatory Fresh</a> 
 
@@ -87,19 +87,19 @@ export default {
           name: 'Karpet CleanPro (Kecil) ',
           description: 'Pembersihan Karpet ukuran kecil, cocok untuk karpet penerimaan tamu atau karpet depan WC dan semacamnya.',
           price: 45000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/lavatory/lava1.jpg'
         },
         {
           name: 'Karpet CleanPro (Sedang + Foam)',
           description: 'Pembersihan Karpet ukuran sedang, ditambahkan dengan pembersihan menggunakan foam.',
           price: 80000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/lavatory/lava4.jpg'
         },
         {
           name: 'Karpet CleanPro (Besar + Full Clean)',
           description: 'Karpet ukuran jumbo dengan alat pembersih yang lengkap mulai steam, foam, hingga steril.',
           price: 120000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/lavatory/lava3.jpg'
         }
       ],
       cart: []

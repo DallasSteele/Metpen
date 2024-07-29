@@ -3,7 +3,7 @@
 
   <hr>
     <div class="mx-4">
-<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
+<a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/user">Home </a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="/carpet-laundry/carpet-page"> Carpet Laundry</a> <a class="text-muted text-decoration-none" href="#"> >> </a>
 <a class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover zoom-effect-container" href="#"> MegaKarpet Wash</a> 
 
@@ -83,13 +83,13 @@ export default {
           name: 'Mega Base Preset ',
           description: 'Pembersihan Karpet ukuran penyesuaian, pembersihan basic karpet.',
           price: 45000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetkecil.jpg'
         },
         {
           name: 'Mega Foam Clean',
           description: 'Pembersihan Karpet menggunakan foam.',
           price: 80000,
-          image: '/images/index/test.jpg'
+          image: '/images/index/carpet/karpetbesar.jpg'
         }
       ],
       cart: []
