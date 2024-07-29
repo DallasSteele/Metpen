@@ -17,7 +17,7 @@
       <nuxt-link to="/admin/transactions">Transactions</nuxt-link>
       <nuxt-link to="/admin/support-requests">Support Requests</nuxt-link>
       <nuxt-link to="/admin/mitra-management">Mitra Management</nuxt-link>
-      <button class="btn btn-dark btn-logout">Logout</button>
+      <nuxt-link to="/auth/login"><button class="btn btn-danger btn-logout">Logout</button></nuxt-link>
     </div>
     <div :class="['content', { 'content--shifted': isSidebarOpen }]">
       <Nuxt />
@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import AdminHeader from '~/components/inc/AdminHeader.vue'
-import AdminFooter from '~/components/inc/AdminFooter.vue'
+import AdminHeader from '~/components/inc/adminHeader.vue'
+import AdminFooter from '~/components/inc/adminFooter.vue'
 
 export default {
   components: {

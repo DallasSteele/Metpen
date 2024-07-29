@@ -100,7 +100,7 @@
   <script>
   export default {
     layout: 'mitralay',
-    name: "mitra",
+    name: "mitrans",
   };
   </script>
   
@@ -134,7 +134,7 @@
     text-decoration: underline;
   }
   .content {
-    margin-left: auto;
+    margin-left: 0px;
     padding: 20px;
   }
   .navbar {

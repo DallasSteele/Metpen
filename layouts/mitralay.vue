@@ -16,7 +16,7 @@
       <nuxt-link to="/vendor/createlistings">Create Listing</nuxt-link>
       <nuxt-link to="/vendor/setpricing">Set Pricing</nuxt-link>
       <nuxt-link to="/vendor/manageorders">Manage Order</nuxt-link>
-      <button class="btn btn-dark btn-logout">Logout</button>
+      <nuxt-link to="/auth/login"><button class="btn btn-danger btn-logout">Logout</button></nuxt-link>
     </div>
     <div :class="['content', { 'content--shifted': isSidebarOpen }]">
       <Nuxt />
