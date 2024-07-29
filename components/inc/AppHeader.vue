@@ -10,10 +10,10 @@
         <li><NuxtLink class="nav-link" to="/orderpage">ORDERS</NuxtLink></li>
         <li>
           <NuxtLink class="profile" to="/profile-page" title="Click For Detail">
-            <img src="/images/profile.jpg" alt="User Profile" class="profile-image">
+            <img src="/images/index/nengchel.jpg" alt="User Profile" class="profile-image">
             <div class="profile-info">
               <span class="username"></span>
-              <span class="role">User</span>
+              <span class="role">Rachel</span>
             </div>
           </NuxtLink>
         </li>
@@ -92,7 +92,7 @@ nav ul li a.logout:hover {
 
 .profile-image {
   width: 30px;
-  height: 30px;
+  height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }

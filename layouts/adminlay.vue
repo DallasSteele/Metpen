@@ -5,7 +5,7 @@
     <div :class="['sidebar', { 'sidebar--open': isSidebarOpen }]">
       <h2>Tidy Tidys</h2>
       <div class="profile">
-        <img src="profile.jpg" alt="Profile Picture" />
+        <img src="/images/index/nengchel.jpg" alt="Profile Picture" />
         <div>
           <p>Rachel</p>
           <small>Admin</small>
@@ -108,7 +108,7 @@ body {
 .profile img {
   border-radius: 50%;
   width: 40px;
-  height: 40px;
+  height: 60px;
   margin-right: 10px;
 }
 
