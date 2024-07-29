@@ -1,8 +1,8 @@
 <template>
   <header class="header">
     <div class="container">
-      <a class="logo" href="/">
-        <img src="/images/index/butake.jpg" alt="Logo" />
+      <a class="logo " href="/">
+        <img class="rounded" src="/images/index/Tidys.png" alt="Logo" />
       </a>
       <nav>
         <div></div>
@@ -31,7 +31,8 @@
 }
 
 .logo img {
-  height: 40px;
+  height: 70px;
+  width: 70px;
 }
 
 nav ul {

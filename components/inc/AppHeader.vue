@@ -1,6 +1,8 @@
 <template>
   <header>
-    <h1>Tidy Tidys</h1>
+   <a class="logo " href="/">
+        <img class="rounded" src="/images/index/Tidys.png" alt="Logo" />
+      </a>
     <nav>
       <ul>
         <li><NuxtLink class="nav-link" to="/user">HOME</NuxtLink></li>
@@ -43,6 +45,12 @@ header {
 header h1 {
   margin: 0;
   font-size: 24px;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  left: 10px;
 }
 
 nav ul {
