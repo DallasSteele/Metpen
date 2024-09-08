@@ -1,0 +1,35 @@
+{
+  "IncAdminfooter": {
+    "description": "Auto imported from components/inc/adminfooter.vue"
+  },
+  "IncAdminheader": {
+    "description": "Auto imported from components/inc/adminheader.vue"
+  },
+  "IncAppFooter": {
+    "description": "Auto imported from components/inc/AppFooter.vue"
+  },
+  "IncAppHeader": {
+    "description": "Auto imported from components/inc/AppHeader.vue"
+  },
+  "IncAuthheader": {
+    "description": "Auto imported from components/inc/Authheader.vue"
+  },
+  "IncHome": {
+    "description": "Auto imported from components/inc/Home.vue"
+  },
+  "IncLoadingmf": {
+    "description": "Auto imported from components/inc/Loadingmf.vue"
+  },
+  "IncMitrafooter": {
+    "description": "Auto imported from components/inc/mitrafooter.vue"
+  },
+  "IncMitraheader": {
+    "description": "Auto imported from components/inc/mitraheader.vue"
+  },
+  "IncServiceCard": {
+    "description": "Auto imported from components/inc/ServiceCard.vue"
+  },
+  "IncSidebar": {
+    "description": "Auto imported from components/inc/Sidebar.vue"
+  }
+}

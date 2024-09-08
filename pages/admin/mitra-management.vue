@@ -17,6 +17,34 @@
         <a href="#">Mitra Management</a>
         <button class="btn btn-dark btn-logout">Logout</button>
       </div> -->
+
+        <!--  .sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #343a40;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  .sidebar h2 {
+    color: #343a40;
+    margin-bottom: 30px;
+  }
+  .sidebar a {
+    color: #343a40;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .sidebar a:hover {
+    text-decoration: underline;
+  } -->
+
+
+
       <div class="content">
         <div class="navbar">
           <h1>Mitra Management</h1>
@@ -85,30 +113,6 @@
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
   }
-  <!--  .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #ffffff;
-    color: #343a40;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-  }
-  .sidebar h2 {
-    color: #343a40;
-    margin-bottom: 30px;
-  }
-  .sidebar a {
-    color: #343a40;
-    text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  .sidebar a:hover {
-    text-decoration: underline;
-  } -->
   .content {
     margin-left: auto;
     padding: auto;

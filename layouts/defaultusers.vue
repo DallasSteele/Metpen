@@ -37,6 +37,7 @@ export default {
       this.isSidebarCollapsed = !this.isSidebarCollapsed;
     }
   },
+/*
   watch: {
     '$route' (to, from) {
       this.loading = true;
@@ -53,6 +54,6 @@ export default {
     if (!token && !publicPaths.includes(currentPath)) {
       this.$router.push('/auth/login');
     }
-  }
+  }*/
 }
 </script>

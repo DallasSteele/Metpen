@@ -1,0 +1,268 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\about.vue",
+    "chunkName": "pages/about",
+    "_name": "_6cf03eb3"
+  },
+  {
+    "name": "cart",
+    "path": "/cart",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\cart.vue",
+    "chunkName": "pages/cart",
+    "_name": "_9854e62c"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_174f9b74"
+  },
+  {
+    "name": "history",
+    "path": "/history",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\history.vue",
+    "chunkName": "pages/history",
+    "_name": "_06e398ba"
+  },
+  {
+    "name": "orderpage",
+    "path": "/orderpage",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\orderpage.vue",
+    "chunkName": "pages/orderpage",
+    "_name": "_15ab61fa"
+  },
+  {
+    "name": "profile-page",
+    "path": "/profile-page",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\profile-page.vue",
+    "chunkName": "pages/profile-page",
+    "_name": "_31e99a7d"
+  },
+  {
+    "name": "services",
+    "path": "/services",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\services.vue",
+    "chunkName": "pages/services",
+    "_name": "_63a46a28"
+  },
+  {
+    "name": "user",
+    "path": "/user",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\user.vue",
+    "chunkName": "pages/user",
+    "_name": "_b8e09fd6"
+  },
+  {
+    "name": "admin-admin",
+    "path": "/admin/admin",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\admin.vue",
+    "chunkName": "pages/admin/admin",
+    "_name": "_17cf1d6a"
+  },
+  {
+    "name": "admin-mitra-management",
+    "path": "/admin/mitra-management",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\mitra-management.vue",
+    "chunkName": "pages/admin/mitra-management",
+    "_name": "_cdf4ab04"
+  },
+  {
+    "name": "admin-platform-performance",
+    "path": "/admin/platform-performance",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\platform-performance.vue",
+    "chunkName": "pages/admin/platform-performance",
+    "_name": "_a6133fea"
+  },
+  {
+    "name": "admin-Support-Requests",
+    "path": "/admin/Support-Requests",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\Support-Requests.vue",
+    "chunkName": "pages/admin/Support-Requests",
+    "_name": "_468f0ef7"
+  },
+  {
+    "name": "admin-transactions",
+    "path": "/admin/transactions",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\transactions.vue",
+    "chunkName": "pages/admin/transactions",
+    "_name": "_072eedec"
+  },
+  {
+    "name": "admin-usermanagement",
+    "path": "/admin/usermanagement",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\admin\\\\usermanagement.vue",
+    "chunkName": "pages/admin/usermanagement",
+    "_name": "_1dd86b7a"
+  },
+  {
+    "name": "auth-login",
+    "path": "/auth/login",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\auth\\\\login.vue",
+    "chunkName": "pages/auth/login",
+    "_name": "_cd9db032"
+  },
+  {
+    "name": "auth-signup",
+    "path": "/auth/signup",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\auth\\\\signup.vue",
+    "chunkName": "pages/auth/signup",
+    "_name": "_4d647bec"
+  },
+  {
+    "name": "carpet-laundry-carpet-page",
+    "path": "/carpet-laundry/carpet-page",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\carpet-laundry\\\\carpet-page.vue",
+    "chunkName": "pages/carpet-laundry/carpet-page",
+    "_name": "_36613c88"
+  },
+  {
+    "name": "carpet-laundry-peru1",
+    "path": "/carpet-laundry/peru1",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\carpet-laundry\\\\peru1.vue",
+    "chunkName": "pages/carpet-laundry/peru1",
+    "_name": "_70f539e4"
+  },
+  {
+    "name": "carpet-laundry-peru2",
+    "path": "/carpet-laundry/peru2",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\carpet-laundry\\\\peru2.vue",
+    "chunkName": "pages/carpet-laundry/peru2",
+    "_name": "_71035165"
+  },
+  {
+    "name": "carpet-laundry-peru3",
+    "path": "/carpet-laundry/peru3",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\carpet-laundry\\\\peru3.vue",
+    "chunkName": "pages/carpet-laundry/peru3",
+    "_name": "_711168e6"
+  },
+  {
+    "name": "home-clean-home-page",
+    "path": "/home-clean/home-page",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\home-clean\\\\home-page.vue",
+    "chunkName": "pages/home-clean/home-page",
+    "_name": "_0dd1a128"
+  },
+  {
+    "name": "home-clean-peru4",
+    "path": "/home-clean/peru4",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\home-clean\\\\peru4.vue",
+    "chunkName": "pages/home-clean/peru4",
+    "_name": "_048214a7"
+  },
+  {
+    "name": "home-clean-peru5",
+    "path": "/home-clean/peru5",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\home-clean\\\\peru5.vue",
+    "chunkName": "pages/home-clean/peru5",
+    "_name": "_04902c28"
+  },
+  {
+    "name": "home-clean-peru6",
+    "path": "/home-clean/peru6",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\home-clean\\\\peru6.vue",
+    "chunkName": "pages/home-clean/peru6",
+    "_name": "_049e43a9"
+  },
+  {
+    "name": "lavatory-lavatory-page",
+    "path": "/lavatory/lavatory-page",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\lavatory\\\\lavatory-page.vue",
+    "chunkName": "pages/lavatory/lavatory-page",
+    "_name": "_735bb21e"
+  },
+  {
+    "name": "lavatory-peru7",
+    "path": "/lavatory/peru7",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\lavatory\\\\peru7.vue",
+    "chunkName": "pages/lavatory/peru7",
+    "_name": "_b2c9897a"
+  },
+  {
+    "name": "lavatory-peru8",
+    "path": "/lavatory/peru8",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\lavatory\\\\peru8.vue",
+    "chunkName": "pages/lavatory/peru8",
+    "_name": "_b2ad5a78"
+  },
+  {
+    "name": "lavatory-peru9",
+    "path": "/lavatory/peru9",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\lavatory\\\\peru9.vue",
+    "chunkName": "pages/lavatory/peru9",
+    "_name": "_b2912b76"
+  },
+  {
+    "name": "pool-clean-peru10",
+    "path": "/pool-clean/peru10",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\pool-clean\\\\peru10.vue",
+    "chunkName": "pages/pool-clean/peru10",
+    "_name": "_29b79eb9"
+  },
+  {
+    "name": "pool-clean-peru11",
+    "path": "/pool-clean/peru11",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\pool-clean\\\\peru11.vue",
+    "chunkName": "pages/pool-clean/peru11",
+    "_name": "_29c5b63a"
+  },
+  {
+    "name": "pool-clean-peru12",
+    "path": "/pool-clean/peru12",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\pool-clean\\\\peru12.vue",
+    "chunkName": "pages/pool-clean/peru12",
+    "_name": "_29d3cdbb"
+  },
+  {
+    "name": "pool-clean-pool-page",
+    "path": "/pool-clean/pool-page",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\pool-clean\\\\pool-page.vue",
+    "chunkName": "pages/pool-clean/pool-page",
+    "_name": "_8579f124"
+  },
+  {
+    "name": "vendor-createlistings",
+    "path": "/vendor/createlistings",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\vendor\\\\createlistings.vue",
+    "chunkName": "pages/vendor/createlistings",
+    "_name": "_3313b806"
+  },
+  {
+    "name": "vendor-detailprofil",
+    "path": "/vendor/detailprofil",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\vendor\\\\detailprofil.vue",
+    "chunkName": "pages/vendor/detailprofil",
+    "_name": "_d7a55842"
+  },
+  {
+    "name": "vendor-manageorders",
+    "path": "/vendor/manageorders",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\vendor\\\\manageorders.vue",
+    "chunkName": "pages/vendor/manageorders",
+    "_name": "_1deb381c"
+  },
+  {
+    "name": "vendor-mitra",
+    "path": "/vendor/mitra",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\vendor\\\\mitra.vue",
+    "chunkName": "pages/vendor/mitra",
+    "_name": "_0abd40e5"
+  },
+  {
+    "name": "vendor-setpricing",
+    "path": "/vendor/setpricing",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\vendor\\\\setpricing.vue",
+    "chunkName": "pages/vendor/setpricing",
+    "_name": "_de1efb94"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\Microsoft VS Code Projects\\\\yfol\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_e6afcd10"
+  }
+]
