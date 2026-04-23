@@ -344,6 +344,20 @@ const tabItems = [
               </template>
 
               <UAccordion :items="faqItems" />
+              <div class="space-y-5">
+                <div>
+                  <p class="eyebrow">Related services</p>
+                  <h2 class="section-title mt-4">Explore more options</h2>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+                  <ServiceCard
+                    v-for="item in services?.filter(s => s.slug !== service.slug).slice(0, 3)"
+                    :key="item.id"
+                    :service="item"
+                  />
+                </div>
+              </div>
             </UCard>
           </div>
         </div>

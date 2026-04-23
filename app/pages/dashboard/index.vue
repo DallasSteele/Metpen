@@ -32,6 +32,9 @@ const totalSpent = computed(() =>
       :title="`Welcome back, ${me?.name || 'there'}`"
       description="A cleaner dashboard with clearer hierarchy, faster scanning, and room for real backend data later."
     />
+    
+    <QuickActionCards />
+    <RecommendationCards />
 
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       <StatCard

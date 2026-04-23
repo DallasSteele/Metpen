@@ -5,16 +5,20 @@ const route = useRoute()
 const { isScrolled } = useScrolled(10)
 
 const links = [
-  { label: 'Home', to: '/', icon: 'i-lucide-house' },
-  { label: 'Services', to: '/services', icon: 'i-lucide-briefcase-business' },
-  { label: 'Dashboard', to: '/dashboard', icon: 'i-lucide-layout-dashboard' },
-  { label: 'Profile', to: '/profile', icon: 'i-lucide-user-round' }
+{ label: 'Home', to: '/', icon: 'i-lucide-house' },
+{ label: 'Services', to: '/services', icon: 'i-lucide-briefcase-business' },
+{ label: 'Specialists', to: '/specialists', icon: 'i-lucide-users' },
+{ label: 'Insights', to: '/insights', icon: 'i-lucide-newspaper' },{ label: 'Pricing', to: '/pricing', icon: 'i-lucide-badge-dollar-sign' },
+{ label: 'About', to: '/about', icon: 'i-lucide-info' },
+{ label: 'Support', to: '/support', icon: 'i-lucide-life-buoy' },
+{ label: 'Dashboard', to: '/dashboard', icon: 'i-lucide-layout-dashboard' },
+{ label: 'Profile', to: '/profile', icon: 'i-lucide-user-round' },
 ]
-
 function isActive(path: string) {
-  if (path === '/') return route.path === '/'
+  if (path === '/dashboard') return route.path === '/dashboard'
   return route.path.startsWith(path)
 }
+
 </script>
 
 <template>

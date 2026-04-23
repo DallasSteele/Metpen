@@ -12,7 +12,15 @@ useSeoMeta({
     </RevealBlock>
 
     <RevealBlock>
+      <StatsStrip />
+    </RevealBlock>
+
+    <RevealBlock>
       <TrustStrip />
+    </RevealBlock>
+
+    <RevealBlock>
+      <ServiceCategoryCards />
     </RevealBlock>
 
     <RevealBlock>
@@ -20,7 +28,19 @@ useSeoMeta({
     </RevealBlock>
 
     <RevealBlock>
+      <HowItWorksCards />
+    </RevealBlock>
+
+    <RevealBlock>
+      <BundleCards />
+    </RevealBlock>
+
+    <RevealBlock>
       <FeatureGrid />
+    </RevealBlock>
+
+    <RevealBlock>
+      <InsightCards />
     </RevealBlock>
 
     <RevealBlock>
