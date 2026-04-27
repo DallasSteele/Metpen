@@ -22,7 +22,7 @@ const specialist = computed(() =>
 
           <div class="mt-6 space-y-3">
             <div class="flex items-center justify-between text-sm">
-              <span class="text-neutral-500">City</span>
+              <span class="text-neutral-500">Kota</span>
               <span class="font-medium text-neutral-900">{{ specialist.city }}</span>
             </div>
             <div class="flex items-center justify-between text-sm">
@@ -30,7 +30,7 @@ const specialist = computed(() =>
               <span class="font-medium text-neutral-900">★ {{ specialist.rating }}</span>
             </div>
             <div class="flex items-center justify-between text-sm">
-              <span class="text-neutral-500">Completed jobs</span>
+              <span class="text-neutral-500">Pekerjaan selesai</span>
               <span class="font-medium text-neutral-900">{{ specialist.jobsCompleted }}</span>
             </div>
           </div>
@@ -39,14 +39,14 @@ const specialist = computed(() =>
         <div class="space-y-6">
           <UCard class="rounded-3xl">
             <template #header>
-              <p class="text-lg font-semibold text-neutral-900">Biography</p>
+              <p class="text-lg font-semibold text-neutral-900">Biografi</p>
             </template>
             <p class="text-sm leading-7 text-neutral-600">{{ specialist.bio }}</p>
           </UCard>
 
           <UCard class="rounded-3xl">
             <template #header>
-              <p class="text-lg font-semibold text-neutral-900">Specialties</p>
+              <p class="text-lg font-semibold text-neutral-900">Keahlian</p>
             </template>
             <div class="flex flex-wrap gap-3">
               <UBadge
@@ -65,8 +65,8 @@ const specialist = computed(() =>
 
       <EmptyState
         v-else
-        title="Specialist not found"
-        description="This profile does not match the current mock data."
+        title="Spesialis tidak ditemukan"
+        description="Profil ini tidak cocok dengan data contoh saat ini."
       />
     </div>
   </section>

@@ -2,26 +2,26 @@
 const steps = [
   {
     step: '01',
-    title: 'Choose a service',
-    description: 'Browse categories, compare options, and find the right fit quickly.',
+    title: 'Pilih layanan',
+    description: 'Jelajahi kategori, bandingkan pilihan, dan temukan yang paling sesuai dengan cepat.',
     icon: 'i-lucide-search'
   },
   {
     step: '02',
-    title: 'Select a time slot',
-    description: 'Pick a schedule that feels clear and dependable.',
+    title: 'Pilih jadwal',
+    description: 'Tentukan waktu yang jelas dan dapat diandalkan.',
     icon: 'i-lucide-calendar-range'
   },
   {
     step: '03',
-    title: 'Confirm the details',
-    description: 'Review address, notes, and price expectations before submitting.',
+    title: 'Konfirmasi detail',
+    description: 'Tinjau alamat, catatan, dan estimasi harga sebelum melanjutkan.',
     icon: 'i-lucide-clipboard-check'
   },
   {
     step: '04',
-    title: 'Track the booking',
-    description: 'Follow progress through a cleaner dashboard and timeline.',
+    title: 'Lacak pemesanan',
+    description: 'Pantau progres melalui dasbor dan timeline yang lebih rapi.',
     icon: 'i-lucide-timer-reset'
   }
 ]
@@ -31,10 +31,10 @@ const steps = [
   <section class="pb-20 lg:pb-28">
     <div class="container-shell">
       <div class="mb-10 max-w-2xl">
-        <p class="eyebrow">Flow</p>
-        <h2 class="section-title mt-4">A clearer path from interest to booking</h2>
+        <p class="eyebrow">Alur</p>
+        <h2 class="section-title mt-4">Alur yang lebih jelas dari minat hingga pemesanan</h2>
         <p class="body-muted mt-4">
-          More content, but still structured. This section explains the product without becoming heavy.
+          Lebih banyak konten, namun tetap terstruktur. Bagian ini menjelaskan produk tanpa terasa berat.
         </p>
       </div>
 

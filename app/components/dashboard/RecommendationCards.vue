@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const recommendations = [
   {
-    title: 'Recommended for you',
-    description: 'Deep Cleaning is currently highlighted based on recent usage patterns.',
+    title: 'Rekomendasi untuk Anda',
+    description: 'Pembersihan Mendalam saat ini direkomendasikan berdasarkan pola penggunaan terbaru.',
     icon: 'i-lucide-sparkles',
     accent: 'bg-[var(--tt-brand-soft)] text-[var(--tt-brand)]'
   },
   {
-    title: 'Save time on repeat bookings',
-    description: 'Keep your preferred address and notes ready for faster confirmation.',
+    title: 'Hemat waktu untuk pemesanan berulang',
+    description: 'Simpan alamat dan catatan Anda untuk proses konfirmasi yang lebih cepat.',
     icon: 'i-lucide-history',
     accent: 'bg-[var(--tt-success-soft)] text-[var(--tt-success)]'
   },
   {
-    title: 'Priority support available',
-    description: 'Premium flow can later connect to faster support and scheduling rules.',
+    title: 'Dukungan prioritas tersedia',
+    description: 'Alur premium nantinya dapat terhubung dengan dukungan yang lebih cepat dan penjadwalan yang lebih fleksibel.',
     icon: 'i-lucide-headset',
     accent: 'bg-amber-50 text-amber-700'
   }

@@ -21,7 +21,7 @@ defineProps<{
 
     <div class="mt-5 grid gap-3">
       <div class="flex items-center justify-between text-sm">
-        <span class="text-neutral-500">City</span>
+        <span class="text-neutral-500">Kota</span>
         <span class="font-medium text-neutral-900">{{ specialist.city }}</span>
       </div>
       <div class="flex items-center justify-between text-sm">
@@ -29,7 +29,7 @@ defineProps<{
         <span class="font-medium text-neutral-900">★ {{ specialist.rating }}</span>
       </div>
       <div class="flex items-center justify-between text-sm">
-        <span class="text-neutral-500">Completed</span>
+        <span class="text-neutral-500">Selesai</span>
         <span class="font-medium text-neutral-900">{{ specialist.jobsCompleted }}</span>
       </div>
     </div>

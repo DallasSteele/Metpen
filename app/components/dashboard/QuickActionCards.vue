@@ -1,20 +1,20 @@
 <script setup lang="ts">
 const actions = [
   {
-    title: 'Create booking',
-    description: 'Start a new service request with the improved booking flow.',
+    title: 'Buat pemesanan',
+    description: 'Mulai permintaan layanan baru dengan alur pemesanan yang lebih baik.',
     icon: 'i-lucide-calendar-plus-2',
     to: '/bookings/new'
   },
   {
-    title: 'Browse services',
-    description: 'Explore more services and compare options more easily.',
+    title: 'Jelajahi layanan',
+    description: 'Temukan lebih banyak layanan dan bandingkan pilihan dengan lebih mudah.',
     icon: 'i-lucide-search',
     to: '/services'
   },
   {
-    title: 'Review profile',
-    description: 'Update details, preferred address, and account preferences.',
+    title: 'Tinjau profil',
+    description: 'Perbarui detail, alamat utama, dan preferensi akun Anda.',
     icon: 'i-lucide-user-round',
     to: '/profile'
   }
@@ -37,7 +37,7 @@ const actions = [
       <p class="mt-3 text-sm leading-6 text-neutral-600">{{ action.description }}</p>
 
       <div class="mt-5 inline-flex items-center gap-2 text-sm font-medium text-[var(--tt-brand)]">
-        <span>Open</span>
+        <span>Buka</span>
         <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
       </div>
     </NuxtLink>

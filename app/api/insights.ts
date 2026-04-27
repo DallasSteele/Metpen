@@ -5,57 +5,57 @@ export default defineEventHandler((): Insight[] => {
     {
       id: 1,
       slug: 'choose-the-right-service',
-      title: 'How to choose the right service for your space',
-      category: 'Guide',
-      readTime: '5 min read',
-      description: 'A cleaner onboarding article for first-time users who need clarity before booking.',
+      title: 'Cara memilih layanan yang tepat untuk ruang Anda',
+      category: 'Panduan',
+      readTime: '5 menit baca',
+      description: 'Artikel onboarding yang lebih bersih untuk pengguna pertama yang membutuhkan kejelasan sebelum memesan.',
       image: '/images/hero/tidy-hero-1.jpg',
       body: [
-        'Not every service should feel identical. Routine care, deep resets, and specialty work all carry different expectations.',
-        'A better product explains where each service fits instead of forcing the user to guess.',
-        'This is why category clarity matters in the interface.'
+        'Tidak semua layanan harus terasa sama. Perawatan rutin, pembersihan mendalam, dan layanan khusus memiliki ekspektasi yang berbeda.',
+        'Produk yang baik menjelaskan di mana setiap layanan cocok, alih-alih memaksa pengguna untuk menebak.',
+        'Inilah alasan mengapa kejelasan kategori penting dalam antarmuka.'
       ]
     },
     {
       id: 2,
       slug: 'what-makes-booking-trustworthy',
-      title: 'What makes a premium booking experience feel trustworthy',
+      title: 'Apa yang membuat pengalaman pemesanan premium terasa dapat dipercaya',
       category: 'Insight',
-      readTime: '4 min read',
-      description: 'A more editorial content card that makes the product feel thoughtful and mature.',
+      readTime: '4 menit baca',
+      description: 'Konten bergaya editorial yang membuat produk terasa lebih matang dan penuh pertimbangan.',
       image: '/images/hero/tidy-hero-2.jpg',
       body: [
-        'Trust is often built through clarity, not volume.',
-        'Users feel more secure when pricing, duration, and process cues are visible early.',
-        'A premium interface should reduce doubt, not simply add visual gloss.'
+        'Kepercayaan sering dibangun melalui kejelasan, bukan jumlah.',
+        'Pengguna merasa lebih aman ketika harga, durasi, dan proses terlihat sejak awal.',
+        'Antarmuka premium seharusnya mengurangi keraguan, bukan sekadar menambah tampilan visual.'
       ]
     },
     {
       id: 3,
       slug: 'why-detail-pages-matter',
-      title: 'Why service detail pages matter more than feature lists',
-      category: 'Design',
-      readTime: '6 min read',
-      description: 'Content that helps the app feel more like a brand and less like a mockup.',
+      title: 'Mengapa halaman detail layanan lebih penting daripada daftar fitur',
+      category: 'Desain',
+      readTime: '6 menit baca',
+      description: 'Konten yang membantu aplikasi terasa lebih seperti sebuah brand dan bukan sekadar mockup.',
       image: '/images/hero/tidy-hero-3.jpg',
       body: [
-        'Flat service listings are rarely enough to support confident decisions.',
-        'Detail pages give room for storytelling, process explanation, and trust signals.',
-        'That depth is what makes a product surface feel believable.'
+        'Daftar layanan yang datar jarang cukup untuk mendukung keputusan yang percaya diri.',
+        'Halaman detail memberi ruang untuk storytelling, penjelasan proses, dan sinyal kepercayaan.',
+        'Kedalaman inilah yang membuat tampilan produk terasa lebih meyakinkan.'
       ]
     },
     {
       id: 4,
       slug: 'designing-for-repeat-bookings',
-      title: 'Designing for repeat bookings without making the UI heavy',
-      category: 'Product',
-      readTime: '5 min read',
-      description: 'A practical look at how recurring service experiences should feel faster over time.',
+      title: 'Merancang untuk pemesanan berulang tanpa membuat UI terasa berat',
+      category: 'Produk',
+      readTime: '5 menit baca',
+      description: 'Tinjauan praktis tentang bagaimana pengalaman layanan berulang seharusnya terasa lebih cepat dari waktu ke waktu.',
       image: '/images/hero/tidy-hero-1.jpg',
       body: [
-        'Returning users should not feel like they are starting from zero each time.',
-        'Saved addresses, repeated notes, and faster confirmations all reduce friction.',
-        'The best recurring flows feel invisible.'
+        'Pengguna yang kembali seharusnya tidak merasa seperti memulai dari nol setiap kali.',
+        'Alamat tersimpan, catatan berulang, dan konfirmasi yang lebih cepat semuanya mengurangi hambatan.',
+        'Alur berulang terbaik terasa seperti tidak terlihat.'
       ]
     }
   ]

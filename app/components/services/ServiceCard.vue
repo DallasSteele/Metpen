@@ -64,14 +64,14 @@ const serviceImage = computed(() => imageMap[props.service.slug] || '/images/her
 
       <div class="mt-8 flex items-center justify-between">
         <div>
-          <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Starting from</p>
+          <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Mulai dari</p>
           <p class="mt-2 text-lg font-semibold text-neutral-900">
             Rp {{ service.priceFrom.toLocaleString('id-ID') }}
           </p>
         </div>
 
         <span class="inline-flex items-center gap-2 text-sm font-medium text-[var(--tt-brand)] transition group-hover:translate-x-1">
-          <span>View details</span>
+          <span>Lihat detail</span>
           <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
         </span>
       </div>

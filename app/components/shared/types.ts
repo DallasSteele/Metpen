@@ -1,11 +1,11 @@
 // shared/types.ts
 
 export type ServiceCategory =
-  | 'home-care'
+  | 'perawatan-rumah'
   | 'laundry'
-  | 'deep-cleaning'
-  | 'business'
-  | 'specialty'
+  | 'pembersihan-mendalam'
+  | 'bisnis'
+  | 'spesialis'
 
 export type Service = {
   id: number

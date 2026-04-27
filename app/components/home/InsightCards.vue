@@ -7,10 +7,10 @@ const { data: insight } = await useFetch('/api/insight')
     <div class="container-shell">
       <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div class="max-w-2xl">
-          <p class="eyebrow">insight</p>
-          <h2 class="section-title mt-4">Content cards that make the product feel alive</h2>
+          <p class="eyebrow">Insight</p>
+          <h2 class="section-title mt-4">Konten yang membuat produk terasa hidup</h2>
           <p class="body-muted mt-4">
-            A product with content feels more believable than a product with only actions.
+            Produk dengan konten terasa lebih meyakinkan dibandingkan produk yang hanya berisi aksi.
           </p>
         </div>
 
@@ -18,7 +18,7 @@ const { data: insight } = await useFetch('/api/insight')
           to="/services"
           class="inline-flex items-center gap-2 text-sm font-medium text-[var(--tt-brand)]"
         >
-          <span>View more</span>
+          <span>Lihat lainnya</span>
           <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
         </NuxtLink>
       </div>
@@ -56,7 +56,7 @@ const { data: insight } = await useFetch('/api/insight')
             </p>
 
             <button class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[var(--tt-brand)]">
-              <span>Read insight</span>
+              <span>Baca selengkapnya</span>
               <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
             </button>
           </div>

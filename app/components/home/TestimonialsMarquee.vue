@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const testimonials = [
   {
-    quote: 'The new version feels calmer, cleaner, and instantly more trustworthy.',
+    quote: 'Versi baru terasa lebih tenang, lebih rapi, dan langsung lebih dapat dipercaya.',
     user: {
       name: 'Rachel Tan',
-      description: 'Premium member',
+      description: 'Anggota premium',
       avatar: {
         src: '/images/avatars/demo-user.jpg',
         loading: 'lazy'
@@ -12,10 +12,10 @@ const testimonials = [
     }
   },
   {
-    quote: 'Booking is finally starting to feel like a real product instead of a wireframe.',
+    quote: 'Proses booking akhirnya terasa seperti produk nyata, bukan sekadar wireframe.',
     user: {
       name: 'Kevin Wong',
-      description: 'Returning customer',
+      description: 'Pelanggan lama',
       avatar: {
         src: '/images/avatars/demo-user.jpg',
         loading: 'lazy'
@@ -23,10 +23,10 @@ const testimonials = [
     }
   },
   {
-    quote: 'The service pages now have enough structure to actually support growth later.',
+    quote: 'Halaman layanan sekarang sudah cukup terstruktur untuk mendukung pertumbuhan ke depan.',
     user: {
       name: 'Amelia Hart',
-      description: 'Operations lead',
+      description: 'Lead operasional',
       avatar: {
         src: '/images/avatars/demo-user.jpg',
         loading: 'lazy'
@@ -34,10 +34,10 @@ const testimonials = [
     }
   },
   {
-    quote: 'This already feels premium enough to pitch internally.',
+    quote: 'Ini sudah terasa cukup premium untuk dipresentasikan secara internal.',
     user: {
       name: 'Noah Lee',
-      description: 'Product reviewer',
+      description: 'Reviewer produk',
       avatar: {
         src: '/images/avatars/demo-user.jpg',
         loading: 'lazy'
@@ -51,10 +51,10 @@ const testimonials = [
   <section class="pb-20 lg:pb-28">
     <div class="container-shell">
       <div class="mb-10 max-w-2xl">
-        <p class="eyebrow">Social proof</p>
-        <h2 class="section-title mt-4">A little movement, a lot more life.</h2>
+        <p class="eyebrow">Bukti sosial</p>
+        <h2 class="section-title mt-4">Sedikit gerakan, jauh lebih hidup.</h2>
         <p class="body-muted mt-4">
-          This section makes the homepage feel less static and more like a living product.
+          Bagian ini membuat halaman utama terasa lebih dinamis dan hidup.
         </p>
       </div>
 

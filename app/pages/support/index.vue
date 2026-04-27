@@ -1,24 +1,24 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Support - Tidy Tidys',
-  description: 'Help, support, and booking assistance.'
+  title: 'Dukungan - Tidy Tidys',
+  description: 'Bantuan, dukungan, dan asistensi pemesanan.'
 })
 
 const faqItems = [
   {
-    label: 'How do I create a booking?',
+    label: 'Bagaimana cara membuat pemesanan?',
     icon: 'i-lucide-circle-help',
-    content: 'Go to New Booking, select a service, pick a date and time, then confirm the request.'
+    content: 'Buka Pemesanan Baru, pilih layanan, tentukan tanggal dan waktu, lalu konfirmasi permintaan.'
   },
   {
-    label: 'Can I edit my booking later?',
+    label: 'Bisakah saya mengubah pemesanan nanti?',
     icon: 'i-lucide-circle-help',
-    content: 'In this mock version, the next layer would connect booking detail pages and edit actions.'
+    content: 'Dalam versi contoh ini, tahap berikutnya akan menghubungkan halaman detail pemesanan dan fitur edit.'
   },
   {
-    label: 'Are the prices final?',
+    label: 'Apakah harga yang ditampilkan sudah final?',
     icon: 'i-lucide-circle-help',
-    content: 'Displayed prices are starting estimates for the current frontend prototype.'
+    content: 'Harga yang ditampilkan adalah estimasi awal untuk prototipe frontend saat ini.'
   }
 ]
 </script>
@@ -27,17 +27,17 @@ const faqItems = [
   <section class="section-space">
     <div class="container-shell max-w-4xl">
       <PageHeading
-        eyebrow="Support"
-        title="Help and assistance"
-        description="A support page makes the app feel more complete and service-ready."
+        eyebrow="Dukungan"
+        title="Bantuan dan asistensi"
+        description="Halaman dukungan membuat aplikasi terasa lebih lengkap dan siap digunakan sebagai layanan."
       />
 
       <UCard class="mt-10 rounded-3xl">
         <template #header>
-          <p class="text-lg font-semibold text-neutral-900">Frequently asked questions</p>
+          <p class="text-lg font-semibold text-white">Pertanyaan yang sering diajukan</p>
         </template>
 
-        <UAccordion :items="faqItems" />
+        <UAccordion :items="faqItems" class="text-white" />
       </UCard>
     </div>
   </section>

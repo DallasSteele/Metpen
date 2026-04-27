@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Pricing - Tidy Tidys',
-  description: 'Package and service pricing overview.'
+  title: 'Harga - Tidy Tidys',
+  description: 'Ikhtisar paket dan harga layanan.'
 })
 </script>
 
@@ -9,9 +9,9 @@ useSeoMeta({
   <section class="section-space">
     <div class="container-shell">
       <PageHeading
-        eyebrow="Pricing"
-        title="Packages and starting prices"
-        description="A standalone pricing page adds depth and commercial realism."
+        eyebrow="Harga"
+        title="Paket dan harga mulai"
+        description="Halaman harga terpisah menambah kedalaman dan kesan komersial yang lebih nyata."
       />
 
       <div class="mt-10">

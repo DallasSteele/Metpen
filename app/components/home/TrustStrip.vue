@@ -7,8 +7,8 @@
             <UIcon name="i-lucide-badge-check" class="h-5 w-5" />
           </div>
           <div>
-            <p class="text-sm font-semibold text-neutral-900">Verified specialists</p>
-            <p class="mt-1 text-xs text-neutral-500">Cleaner and more trustworthy</p>
+            <p class="text-sm font-semibold text-neutral-900">Spesialis terverifikasi</p>
+            <p class="mt-1 text-xs text-neutral-500">Lebih rapi dan lebih dapat dipercaya</p>
           </div>
         </div>
 
@@ -17,8 +17,8 @@
             <UIcon name="i-lucide-calendar-clock" class="h-5 w-5" />
           </div>
           <div>
-            <p class="text-sm font-semibold text-neutral-900">Flexible scheduling</p>
-            <p class="mt-1 text-xs text-neutral-500">Clearer date and slot flow</p>
+            <p class="text-sm font-semibold text-neutral-900">Penjadwalan fleksibel</p>
+            <p class="mt-1 text-xs text-neutral-500">Alur tanggal dan waktu yang lebih jelas</p>
           </div>
         </div>
 
@@ -27,8 +27,8 @@
             <UIcon name="i-lucide-shield-check" class="h-5 w-5" />
           </div>
           <div>
-            <p class="text-sm font-semibold text-neutral-900">Safer service flow</p>
-            <p class="mt-1 text-xs text-neutral-500">More confidence at every step</p>
+            <p class="text-sm font-semibold text-neutral-900">Alur layanan lebih aman</p>
+            <p class="mt-1 text-xs text-neutral-500">Lebih percaya diri di setiap langkah</p>
           </div>
         </div>
 
@@ -37,8 +37,8 @@
             <UIcon name="i-lucide-sparkles" class="h-5 w-5" />
           </div>
           <div>
-            <p class="text-sm font-semibold text-neutral-900">Refined interface</p>
-            <p class="mt-1 text-xs text-neutral-500">Cleaner visual hierarchy</p>
+            <p class="text-sm font-semibold text-neutral-900">Antarmuka yang lebih halus</p>
+            <p class="mt-1 text-xs text-neutral-500">Hierarki visual yang lebih rapi</p>
           </div>
         </div>
       </div>

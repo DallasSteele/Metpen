@@ -5,11 +5,11 @@ const route = useRoute()
 const { data: services } = await useFetch<Service[]>('/api/services')
 
 const categoryTitleMap: Record<string, string> = {
-  'home-care': 'Home Care',
+  'home-care': 'Perawatan Rumah',
   'laundry': 'Laundry',
-  'deep-cleaning': 'Deep Cleaning',
-  'business': 'Business',
-  'specialty': 'Specialty'
+  'deep-cleaning': 'Pembersihan Mendalam',
+  'business': 'Bisnis',
+  'specialty': 'Khusus'
 }
 
 const filtered = computed(() =>
@@ -17,7 +17,7 @@ const filtered = computed(() =>
 )
 
 useSeoMeta({
-  title: `${categoryTitleMap[String(route.params.category)] || 'Services'} - Tidy Tidys`
+  title: `${categoryTitleMap[String(route.params.category)] || 'Layanan'} - Tidy Tidys`
 })
 </script>
 
@@ -25,9 +25,9 @@ useSeoMeta({
   <section class="section-space">
     <div class="container-shell">
       <PageHeading
-        eyebrow="Category"
-        :title="categoryTitleMap[String(route.params.category)] || 'Services'"
-        description="A deeper layer of service browsing based on category."
+        eyebrow="Kategori"
+        :title="categoryTitleMap[String(route.params.category)] || 'Layanan'"
+        description="Lapisan eksplorasi layanan yang lebih dalam berdasarkan kategori."
       />
 
       <div v-if="filtered.length" class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -40,8 +40,8 @@ useSeoMeta({
 
       <div v-else class="mt-10">
         <EmptyState
-          title="No services in this category yet"
-          description="Add more category data later or redirect users back to all services."
+          title="Belum ada layanan di kategori ini"
+          description="Tambahkan data kategori nanti atau arahkan pengguna kembali ke semua layanan."
         />
       </div>
     </div>

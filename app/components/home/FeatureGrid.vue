@@ -2,38 +2,38 @@
   <section class="pb-20 lg:pb-28">
     <div class="container-shell">
       <div class="mb-10 max-w-2xl">
-        <p class="eyebrow">Why this version is better</p>
+        <p class="eyebrow">Mengapa versi ini lebih baik</p>
         <h2 class="section-title mt-4">
-          Built to feel elegant first, scalable second, messy never.
+          Dirancang untuk terasa elegan terlebih dahulu, skalabel kemudian, tanpa pernah terasa berantakan.
         </h2>
       </div>
 
       <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         <div class="soft-card p-6">
-          <p class="text-lg font-semibold text-neutral-900">Cleaner hierarchy</p>
+          <p class="text-lg font-semibold text-neutral-900">Hierarki lebih rapi</p>
           <p class="mt-3 text-sm leading-6 text-neutral-600">
-            Better spacing, stronger typography, and fewer visual distractions.
+            Jarak antar elemen lebih baik, tipografi lebih kuat, dan lebih sedikit distraksi visual.
           </p>
         </div>
 
         <div class="soft-card p-6">
-          <p class="text-lg font-semibold text-neutral-900">Reusable structure</p>
+          <p class="text-lg font-semibold text-neutral-900">Struktur yang dapat digunakan ulang</p>
           <p class="mt-3 text-sm leading-6 text-neutral-600">
-            No more duplicated pages pretending to be a scalable product.
+            Tidak lagi ada halaman duplikat yang seolah-olah terlihat skalabel.
           </p>
         </div>
 
         <div class="soft-card p-6">
-          <p class="text-lg font-semibold text-neutral-900">Service-first UX</p>
+          <p class="text-lg font-semibold text-neutral-900">UX berfokus pada layanan</p>
           <p class="mt-3 text-sm leading-6 text-neutral-600">
-            Discovery, detail, and booking flow are now the center of the experience.
+            Eksplorasi, detail, dan alur pemesanan kini menjadi pusat pengalaman.
           </p>
         </div>
 
         <div class="soft-card p-6">
-          <p class="text-lg font-semibold text-neutral-900">Backend-ready</p>
+          <p class="text-lg font-semibold text-neutral-900">Siap untuk backend</p>
           <p class="mt-3 text-sm leading-6 text-neutral-600">
-            Mock API and store structure already prepare the app for real data later.
+            Struktur mock API dan store sudah mempersiapkan aplikasi untuk data nyata ke depannya.
           </p>
         </div>
       </div>

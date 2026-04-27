@@ -5,20 +5,21 @@ const route = useRoute()
 const { isScrolled } = useScrolled(10)
 
 const links = [
-{ label: 'Home', to: '/', icon: 'i-lucide-house' },
-{ label: 'Services', to: '/services', icon: 'i-lucide-briefcase-business' },
-{ label: 'Specialists', to: '/specialists', icon: 'i-lucide-users' },
-{ label: 'Insights', to: '/insights', icon: 'i-lucide-newspaper' },{ label: 'Pricing', to: '/pricing', icon: 'i-lucide-badge-dollar-sign' },
-{ label: 'About', to: '/about', icon: 'i-lucide-info' },
-{ label: 'Support', to: '/support', icon: 'i-lucide-life-buoy' },
-{ label: 'Dashboard', to: '/dashboard', icon: 'i-lucide-layout-dashboard' },
-{ label: 'Profile', to: '/profile', icon: 'i-lucide-user-round' },
+{ label: 'Beranda', to: '/', icon: 'i-lucide-house' },
+{ label: 'Layanan', to: '/services', icon: 'i-lucide-briefcase-business' },
+{ label: 'Spesialis', to: '/specialists', icon: 'i-lucide-users' },
+{ label: 'Insight', to: '/insights', icon: 'i-lucide-newspaper' },
+{ label: 'Harga', to: '/pricing', icon: 'i-lucide-badge-dollar-sign' },
+{ label: 'Tentang', to: '/about', icon: 'i-lucide-info' },
+{ label: 'Bantuan', to: '/support', icon: 'i-lucide-life-buoy' },
+{ label: 'Dasbor', to: '/dashboard', icon: 'i-lucide-layout-dashboard' },
+{ label: 'Profil', to: '/profile', icon: 'i-lucide-user-round' },
 ]
+
 function isActive(path: string) {
   if (path === '/dashboard') return route.path === '/dashboard'
   return route.path.startsWith(path)
 }
-
 </script>
 
 <template>
@@ -49,18 +50,38 @@ function isActive(path: string) {
 
       <nav class="hidden items-center gap-2 md:flex">
         <NuxtLink
-          v-for="link in links.slice(0, 3)"
-          :key="link.to"
-          :to="link.to"
-          :class="[
-            'inline-flex items-center gap-2 rounded-2xl px-4 py-2 text-sm font-medium transition',
-            isActive(link.to)
-              ? 'bg-white text-neutral-900 shadow-sm'
-              : 'text-neutral-600 hover:bg-white/80 hover:text-neutral-900'
-          ]"
+          to="/"
+          class="rounded-2xl px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-white/80 hover:text-neutral-900"
         >
-          <UIcon :name="link.icon" class="h-4 w-4" />
-          <span>{{ link.label }}</span>
+          Beranda
+        </NuxtLink>
+
+        <NuxtLink
+          to="/explore"
+          class="rounded-2xl px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-white/80 hover:text-neutral-900"
+        >
+          Jelajahi
+        </NuxtLink>
+
+        <NuxtLink
+          to="/services"
+          class="rounded-2xl px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-white/80 hover:text-neutral-900"
+        >
+          Layanan
+        </NuxtLink>
+
+        <NuxtLink
+          to="/membership"
+          class="rounded-2xl px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-white/80 hover:text-neutral-900"
+        >
+          Keanggotaan
+        </NuxtLink>
+
+        <NuxtLink
+          to="/contact"
+          class="rounded-2xl px-4 py-2 text-sm font-medium text-neutral-700 transition hover:bg-white/80 hover:text-neutral-900"
+        >
+          Kontak
         </NuxtLink>
       </nav>
 
@@ -72,7 +93,7 @@ function isActive(path: string) {
           class="inline-flex items-center gap-2 rounded-2xl bg-[var(--tt-brand)] px-4 py-2 text-sm font-medium text-white transition hover:opacity-90"
         >
           <UIcon name="i-lucide-calendar-plus-2" class="h-4 w-4" />
-          <span>Book now</span>
+          <span>Pesan sekarang</span>
         </NuxtLink>
       </div>
 
@@ -97,7 +118,7 @@ function isActive(path: string) {
                 class="flex items-center justify-center gap-2 rounded-2xl bg-[var(--tt-brand)] px-4 py-3 text-sm font-medium text-white"
               >
                 <UIcon name="i-lucide-calendar-plus-2" class="h-4 w-4" />
-                <span>Book now</span>
+                <span>Pesan sekarang</span>
               </NuxtLink>
             </div>
           </template>

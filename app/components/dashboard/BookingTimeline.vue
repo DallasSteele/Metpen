@@ -22,7 +22,7 @@ const items = computed<TimelineItem[]>(() =>
   <UCard class="rounded-3xl">
     <template #header>
       <div>
-        <p class="text-lg font-semibold text-neutral-900">Booking activity</p>
+        <p class="text-lg font-semibold text-white">Booking activity</p>
         <p class="mt-2 text-sm leading-6 text-neutral-600">
           A cleaner timeline view of recent activity instead of only stacked cards.
         </p>

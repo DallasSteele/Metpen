@@ -19,10 +19,10 @@ const items = computed(() =>
   <section class="pb-20 lg:pb-28">
     <div class="container-shell">
       <div class="mb-10 max-w-2xl">
-        <p class="eyebrow">Featured discovery</p>
-        <h2 class="section-title mt-4">Browse services in a more editorial way</h2>
+        <p class="eyebrow">Pilihan unggulan</p>
+        <h2 class="section-title mt-4">Jelajahi layanan dengan tampilan yang lebih editorial</h2>
         <p class="body-muted mt-4">
-          This adds movement and makes service discovery feel less like a flat product grid.
+          Ini menambahkan dinamika dan membuat eksplorasi layanan terasa lebih hidup dibandingkan grid biasa.
         </p>
       </div>
 
@@ -59,7 +59,7 @@ const items = computed(() =>
 
           <div class="p-6">
             <div class="mb-3 inline-flex rounded-full bg-[var(--tt-brand-soft)] px-3 py-1 text-xs font-medium text-[var(--tt-brand)]">
-              Featured service
+              Layanan unggulan
             </div>
 
             <h3 class="text-2xl font-semibold tracking-tight text-neutral-900">
@@ -72,11 +72,11 @@ const items = computed(() =>
 
             <div class="mt-6 flex items-center justify-between">
               <span class="text-sm text-neutral-500">
-                From Rp {{ item.priceFrom.toLocaleString('id-ID') }}
+                Mulai dari Rp {{ item.priceFrom.toLocaleString('id-ID') }}
               </span>
 
               <span class="inline-flex items-center gap-2 text-sm font-medium text-[var(--tt-brand)] transition group-hover:translate-x-1">
-                <span>Explore</span>
+                <span>Jelajahi</span>
                 <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
               </span>
             </div>

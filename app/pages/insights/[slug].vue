@@ -48,8 +48,8 @@ const insight = computed(() =>
 
       <EmptyState
         v-else
-        title="Insight not found"
-        description="This article is not available in the current mock set."
+        title="Insight tidak ditemukan"
+        description="Artikel ini tidak tersedia dalam data contoh saat ini."
       />
     </div>
   </section>

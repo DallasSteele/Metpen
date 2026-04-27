@@ -24,6 +24,10 @@ useSeoMeta({
     </RevealBlock>
 
     <RevealBlock>
+      <OfferCards />
+    </RevealBlock>
+
+    <RevealBlock>
       <FeaturedServicesCarousel />
     </RevealBlock>
 
@@ -32,7 +36,15 @@ useSeoMeta({
     </RevealBlock>
 
     <RevealBlock>
+      <MembershipCards />
+    </RevealBlock>
+
+    <RevealBlock>
       <BundleCards />
+    </RevealBlock>
+
+    <RevealBlock>
+      <CoverageGrid />
     </RevealBlock>
 
     <RevealBlock>
@@ -48,7 +60,16 @@ useSeoMeta({
     </RevealBlock>
 
     <RevealBlock>
+    <ReviewShowcase />
+    </RevealBlock>
+
+    <RevealBlock>
+      <FaqPreviewCards />
+    </RevealBlock>
+
+    <RevealBlock>
       <EditorialShowcase />
     </RevealBlock>
+
   </div>
 </template>

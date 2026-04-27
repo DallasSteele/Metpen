@@ -5,8 +5,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Profile - Tidy Tidys',
-  description: 'Manage your account profile and preferences.'
+  title: 'Profil - Tidy Tidys',
+  description: 'Kelola profil akun dan preferensi Anda.'
 })
 
 const toast = useToast()
@@ -14,8 +14,8 @@ const { data: me } = await useFetch('/api/me')
 
 function handleSave() {
   toast.add({
-    title: 'Profile saved',
-    description: 'Your changes were saved in demo mode.',
+    title: 'Profil tersimpan',
+    description: 'Perubahan Anda disimpan dalam mode demo.',
     icon: 'i-lucide-check-circle-2',
     color: 'success'
   })
@@ -25,9 +25,9 @@ function handleSave() {
 <template>
   <div class="space-y-8">
     <PageHeading
-      eyebrow="Account"
-      title="Profile"
-      description="A cleaner account page with clearer identity and preferences."
+      eyebrow="Akun"
+      title="Profil"
+      description="Halaman akun yang lebih rapi dengan identitas dan preferensi yang lebih jelas."
     />
 
     <div class="grid gap-6 xl:grid-cols-[0.9fr_1.1fr]">
@@ -49,26 +49,26 @@ function handleSave() {
           </div>
 
           <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Phone</p>
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Telepon</p>
             <p class="mt-1 text-sm font-medium text-neutral-900">{{ me?.phone }}</p>
           </div>
 
           <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">City</p>
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Kota</p>
             <p class="mt-1 text-sm font-medium text-neutral-900">{{ me?.city }}</p>
           </div>
         </div>
       </div>
 
       <div class="soft-card p-6">
-        <p class="text-lg font-semibold text-neutral-900">Preferences</p>
+        <p class="text-lg font-semibold text-neutral-900">Preferensi</p>
         <p class="mt-2 text-sm leading-6 text-neutral-600">
-          This area will later connect to real user settings and saved addresses.
+          Area ini nantinya akan terhubung dengan pengaturan pengguna dan alamat tersimpan.
         </p>
 
         <div class="mt-6 grid gap-5">
           <div>
-            <label class="mb-2 block text-sm font-medium text-neutral-700">Full name</label>
+            <label class="mb-2 block text-sm font-medium text-neutral-700">Nama lengkap</label>
             <input
               :value="me?.name"
               type="text"
@@ -77,7 +77,7 @@ function handleSave() {
           </div>
 
           <div>
-            <label class="mb-2 block text-sm font-medium text-neutral-700">Preferred address</label>
+            <label class="mb-2 block text-sm font-medium text-neutral-700">Alamat pilihan</label>
             <textarea
               rows="4"
               :value="me?.preferredAddress"
@@ -86,7 +86,7 @@ function handleSave() {
           </div>
 
           <div>
-            <label class="mb-2 block text-sm font-medium text-neutral-700">Preferred phone number</label>
+            <label class="mb-2 block text-sm font-medium text-neutral-700">Nomor telepon pilihan</label>
             <input
               :value="me?.phone"
               type="text"
@@ -96,9 +96,9 @@ function handleSave() {
 
           <button
             class="rounded-2xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white"
-              @click="handleSave"
-              >
-            Save changes
+            @click="handleSave"
+          >
+            Simpan perubahan
           </button>
         </div>
       </div>

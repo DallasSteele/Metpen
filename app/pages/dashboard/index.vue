@@ -5,8 +5,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Dashboard - Tidy Tidys',
-  description: 'Overview of bookings, activity, and account status.'
+  title: 'Dasbor - Tidy Tidys',
+  description: 'Ringkasan pemesanan, aktivitas, dan status akun.'
 })
 
 const { data: me } = await useFetch('/api/me')
@@ -28,29 +28,29 @@ const totalSpent = computed(() =>
 <template>
   <div class="space-y-8">
     <PageHeading
-      eyebrow="Overview"
-      :title="`Welcome back, ${me?.name || 'there'}`"
-      description="A cleaner dashboard with clearer hierarchy, faster scanning, and room for real backend data later."
+      eyebrow="Ringkasan"
+      :title="`Selamat datang kembali, ${me?.name || 'Anda'}`"
+      description="Dasbor yang lebih rapi dengan hierarki yang jelas, mudah dipindai, dan siap untuk integrasi data backend."
     />
-    
+
     <QuickActionCards />
     <RecommendationCards />
 
     <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       <StatCard
-        label="Active bookings"
+        label="Pemesanan aktif"
         :value="String(upcomingCount)"
-        helper="Confirmed and in-progress services"
+        helper="Layanan yang dikonfirmasi dan sedang berjalan"
       />
       <StatCard
-        label="Completed bookings"
+        label="Pemesanan selesai"
         :value="String(completedCount)"
-        helper="Finished service history"
+        helper="Riwayat layanan yang telah selesai"
       />
       <StatCard
-        label="Total spent"
+        label="Total pengeluaran"
         :value="`Rp ${totalSpent.toLocaleString('id-ID')}`"
-        helper="Mock summary for the current account"
+        helper="Ringkasan simulasi untuk akun saat ini"
       />
     </div>
 
@@ -61,14 +61,14 @@ const totalSpent = computed(() =>
             to="/bookings"
             class="rounded-2xl border border-neutral-300 px-4 py-2 text-sm font-medium text-neutral-900"
           >
-            View all
+            Lihat semua
           </NuxtLink>
 
           <NuxtLink
             to="/bookings/new"
             class="rounded-2xl bg-neutral-900 px-4 py-2 text-sm font-medium text-white"
           >
-            New booking
+            Pemesanan baru
           </NuxtLink>
         </div>
 
@@ -96,7 +96,13 @@ const totalSpent = computed(() =>
                   'bg-neutral-100 text-neutral-700': booking.status === 'Completed'
                 }"
               >
-                {{ booking.status }}
+                {{
+                  booking.status === 'Confirmed'
+                    ? 'Dikonfirmasi'
+                    : booking.status === 'In Progress'
+                    ? 'Sedang diproses'
+                    : 'Selesai'
+                }}
               </span>
 
               <span class="text-sm font-medium text-neutral-900">
@@ -108,58 +114,58 @@ const totalSpent = computed(() =>
       </div>
 
       <div class="grid gap-6 xl:grid-cols-[1fr_1fr]">
-  <BookingTimeline />
+        <BookingTimeline />
 
-  <UCard class="rounded-3xl">
-    <template #header>
-      <div>
-        <p class="text-lg font-semibold text-neutral-900">Service spotlight</p>
-        <p class="mt-2 text-sm leading-6 text-neutral-600">
-          A richer editorial panel makes the dashboard feel more curated.
-        </p>
+        <UCard class="rounded-3xl">
+          <template #header>
+            <div>
+              <p class="text-lg font-semibold text-white">Sorotan layanan</p>
+              <p class="mt-2 text-sm leading-6 text-neutral-600">
+                Panel editorial yang lebih kaya membuat dasbor terasa lebih terkurasi.
+              </p>
+            </div>
+          </template>
+
+          <div class="overflow-hidden rounded-[1.5rem]">
+            <NuxtImg
+              src="/images/services/deep-cleaning.jpg"
+              alt="Sorotan Pembersihan Mendalam"
+              width="1200"
+              height="800"
+              class="h-56 w-full object-cover"
+            />
+          </div>
+
+          <div class="mt-5">
+            <div class="brand-chip">
+              <UIcon name="i-lucide-sparkles" class="h-4 w-4" />
+              <span>Pilihan utama minggu ini</span>
+            </div>
+
+            <h3 class="mt-4 text-2xl font-semibold tracking-tight text-white">
+              Pembersihan Mendalam
+            </h3>
+
+            <p class="mt-3 text-sm leading-6 text-neutral-600">
+              Layanan pembersihan premium untuk pindahan, setelah acara, atau rumah yang membutuhkan perawatan lebih mendalam.
+            </p>
+
+            <NuxtLink
+              to="/services/deep-cleaning"
+              class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-[var(--tt-brand)] px-4 py-3 text-sm font-medium text-white"
+            >
+              <span>Lihat detail</span>
+              <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
+            </NuxtLink>
+          </div>
+        </UCard>
       </div>
-    </template>
 
-    <div class="overflow-hidden rounded-[1.5rem]">
-      <NuxtImg
-        src="/images/services/deep-cleaning.jpg"
-        alt="Deep Cleaning spotlight"
-        width="1200"
-        height="800"
-        class="h-56 w-full object-cover"
-      />
-    </div>
-
-    <div class="mt-5">
-      <div class="brand-chip">
-        <UIcon name="i-lucide-sparkles" class="h-4 w-4" />
-        <span>Top pick this week</span>
-      </div>
-
-      <h3 class="mt-4 text-2xl font-semibold tracking-tight text-neutral-900">
-        Deep Cleaning
-      </h3>
-
-      <p class="mt-3 text-sm leading-6 text-neutral-600">
-        A more premium, full-reset service for move-ins, event recovery, and homes that need deeper attention.
-      </p>
-
-      <NuxtLink
-        to="/services/deep-cleaning"
-        class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-[var(--tt-brand)] px-4 py-3 text-sm font-medium text-white"
-      >
-        <span>View details</span>
-        <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
-      </NuxtLink>
-    </div>
-  </UCard>
-</div>
-
-    <div class="grid gap-4 md:grid-cols-3">
+      <div class="grid gap-4 md:grid-cols-3">
         <div class="overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/tidy-hero-1.jpg"
-            alt="Service preview 1"
+            alt="Pratinjau layanan 1"
             width="800"
             height="600"
             class="h-44 w-full object-cover"
@@ -168,7 +174,7 @@ const totalSpent = computed(() =>
         <div class="overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/tidy-hero-2.jpg"
-            alt="Service preview 2"
+            alt="Pratinjau layanan 2"
             width="800"
             height="600"
             class="h-44 w-full object-cover"
@@ -177,18 +183,18 @@ const totalSpent = computed(() =>
         <div class="overflow-hidden rounded-3xl">
           <NuxtImg
             src="/images/hero/tidy-hero-3.jpg"
-            alt="Service preview 3"
+            alt="Pratinjau layanan 3"
             width="800"
             height="600"
             class="h-44 w-full object-cover"
           />
         </div>
-  </div>
+      </div>
 
       <div class="soft-card p-6">
-        <p class="text-lg font-semibold text-neutral-900">Account snapshot</p>
+        <p class="text-lg font-semibold text-neutral-900">Ringkasan akun</p>
         <p class="mt-2 text-sm leading-6 text-neutral-600">
-          Quick profile info for the logged-in experience.
+          Informasi profil singkat untuk pengalaman pengguna yang sudah masuk.
         </p>
 
         <div class="mt-6 space-y-4">
@@ -198,12 +204,12 @@ const totalSpent = computed(() =>
           </div>
 
           <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Phone</p>
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Telepon</p>
             <p class="mt-1 text-sm font-medium text-neutral-900">{{ me?.phone }}</p>
           </div>
 
           <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Preferred city</p>
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Kota pilihan</p>
             <p class="mt-1 text-sm font-medium text-neutral-900">{{ me?.city }}</p>
           </div>
         </div>
@@ -212,7 +218,7 @@ const totalSpent = computed(() =>
           to="/profile"
           class="mt-6 inline-flex rounded-2xl border border-neutral-300 px-4 py-2.5 text-sm font-medium text-neutral-900"
         >
-          View full profile
+          Lihat profil lengkap
         </NuxtLink>
       </div>
     </div>

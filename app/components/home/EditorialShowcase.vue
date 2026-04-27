@@ -5,7 +5,7 @@
         <div class="overflow-hidden rounded-[2rem] border border-neutral-200 bg-white shadow-[0_12px_35px_rgba(0,0,0,0.05)]">
           <NuxtImg
             src="/images/hero/tidy-hero-3.jpg"
-            alt="Editorial service showcase"
+            alt="Tampilan layanan bergaya editorial"
             width="1400"
             height="1000"
             class="h-[420px] w-full object-cover"
@@ -15,17 +15,17 @@
         <div>
           <div class="warm-chip">
             <UIcon name="i-lucide-star" class="h-4 w-4" />
-            <span>Design-forward service experience</span>
+            <span>Pengalaman layanan berfokus pada desain</span>
           </div>
 
           <h2 class="section-title mt-5">
-            Premium doesn’t need to be loud.
+            Premium tidak harus mencolok.
           </h2>
 
           <p class="body-muted mt-5 max-w-2xl">
-            The strongest upgrade here is not just cleaner spacing or better cards.
-            It is that the whole experience now feels more composed, more trustworthy,
-            and much closer to something users would actually enjoy using.
+            Peningkatan terbesar di sini bukan hanya soal jarak antar elemen yang lebih rapi atau kartu yang lebih baik.
+            Tetapi keseluruhan pengalaman kini terasa lebih terstruktur, lebih dapat dipercaya,
+            dan jauh lebih mendekati sesuatu yang benar-benar ingin digunakan oleh pengguna.
           </p>
 
           <div class="mt-8 grid gap-4 sm:grid-cols-2">
@@ -33,9 +33,9 @@
               <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--tt-brand-soft)] text-[var(--tt-brand)]">
                 <UIcon name="i-lucide-badge-check" class="h-5 w-5" />
               </div>
-              <p class="text-base font-semibold text-neutral-900">Clearer trust signals</p>
+              <p class="text-base font-semibold text-neutral-900">Sinyal kepercayaan lebih jelas</p>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
-                Better hierarchy and better visual confidence.
+                Hierarki yang lebih baik dan tampilan yang lebih meyakinkan.
               </p>
             </div>
 
@@ -43,9 +43,9 @@
               <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-2xl bg-[var(--tt-success-soft)] text-[var(--tt-success)]">
                 <UIcon name="i-lucide-clock-3" class="h-5 w-5" />
               </div>
-              <p class="text-base font-semibold text-neutral-900">Faster decision-making</p>
+              <p class="text-base font-semibold text-neutral-900">Pengambilan keputusan lebih cepat</p>
               <p class="mt-2 text-sm leading-6 text-neutral-600">
-                Cleaner service comparison and booking flow.
+                Perbandingan layanan dan alur pemesanan yang lebih ringkas.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@
             to="/services"
             class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-[var(--tt-accent)] px-5 py-3 text-sm font-medium text-white"
           >
-            <span>Explore all services</span>
+            <span>Jelajahi semua layanan</span>
             <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
           </NuxtLink>
         </div>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Service Detail - Tidy Tidys',
-  description: 'Premium service detail experience with richer information architecture.'
+  title: 'Detail Layanan - Tidy Tidys',
+  description: 'Pengalaman detail layanan premium dengan struktur informasi yang lebih lengkap.'
 })
 
 const route = useRoute()
@@ -24,22 +24,22 @@ const detailMap: Record<string, {
   overview: string
 }> = {
   'home-cleaning': {
-    tags: ['Routine', 'Residential', 'Fast turnaround'],
-    overview: 'A reliable recurring home cleaning service designed for modern households that want consistency, speed, and a visibly polished result.',
-    includes: ['Surface dusting', 'Floor vacuuming', 'Bathroom wipe-down', 'Kitchen reset', 'Trash collection'],
-    process: ['Pick your preferred slot', 'Confirm address and access notes', 'Assigned specialist arrives', 'Service completion and review']
+    tags: ['Rutin', 'Rumahan', 'Pengerjaan cepat'],
+    overview: 'Layanan pembersihan rumah rutin yang andal untuk rumah modern yang menginginkan konsistensi, kecepatan, dan hasil yang terlihat rapi.',
+    includes: ['Membersihkan debu permukaan', 'Menyedot debu lantai', 'Membersihkan kamar mandi', 'Merapikan dapur', 'Mengumpulkan sampah'],
+    process: ['Pilih jadwal yang Anda inginkan', 'Konfirmasi alamat dan catatan akses', 'Spesialis yang ditugaskan tiba', 'Layanan selesai dan ulasan']
   },
   'laundry-pickup': {
-    tags: ['Pickup', 'Convenient', 'Lightweight'],
-    overview: 'A simple pickup and return flow for everyday laundry, styled to feel premium and predictable rather than chaotic.',
-    includes: ['Scheduled pickup', 'Garment sorting', 'Cleaning process', 'Neat packing', 'Return handoff'],
-    process: ['Select pickup slot', 'Confirm address', 'Laundry is collected', 'Cleaning and packing', 'Return delivery']
+    tags: ['Jemput', 'Praktis', 'Ringan'],
+    overview: 'Alur jemput dan antar kembali yang sederhana untuk laundry harian, dibuat terasa premium dan teratur.',
+    includes: ['Penjemputan terjadwal', 'Penyortiran pakaian', 'Proses pembersihan', 'Pengemasan rapi', 'Serah terima kembali'],
+    process: ['Pilih jadwal penjemputan', 'Konfirmasi alamat', 'Laundry dijemput', 'Pembersihan dan pengemasan', 'Pengantaran kembali']
   },
   'deep-cleaning': {
-    tags: ['Premium', 'Detailed', 'Reset service'],
-    overview: 'A more comprehensive cleaning experience for move-ins, post-event resets, or homes that need a full refresh instead of a quick touch-up.',
-    includes: ['Room-by-room deep reset', 'Targeted stain attention', 'Bathroom detail work', 'Kitchen deep wipe-down', 'Final finishing pass'],
-    process: ['Select deep-cleaning slot', 'Add instructions', 'Specialist team assigned', 'Service performed', 'Final check and review']
+    tags: ['Premium', 'Detail', 'Layanan menyeluruh'],
+    overview: 'Pengalaman pembersihan yang lebih menyeluruh untuk pindahan, setelah acara, atau rumah yang membutuhkan penyegaran total.',
+    includes: ['Pembersihan mendalam per ruangan', 'Penanganan noda tertentu', 'Detail kamar mandi', 'Pembersihan mendalam dapur', 'Finishing akhir'],
+    process: ['Pilih jadwal deep cleaning', 'Tambahkan instruksi', 'Tim spesialis ditugaskan', 'Layanan dilakukan', 'Pengecekan akhir dan ulasan']
   }
 }
 
@@ -59,38 +59,38 @@ const carouselImages = computed(() => {
 const faqMap: Record<string, { label: string; icon: string; content: string }[]> = {
   'home-cleaning': [
     {
-      label: 'How long does the service usually take?',
+      label: 'Berapa lama layanan biasanya berlangsung?',
       icon: 'i-lucide-circle-help',
-      content: 'Most sessions take around 2 to 4 hours depending on unit size and condition.'
+      content: 'Sebagian besar sesi berlangsung sekitar 2 hingga 4 jam, tergantung ukuran dan kondisi unit.'
     },
     {
-      label: 'Do I need to provide cleaning tools?',
+      label: 'Apakah saya perlu menyediakan alat kebersihan?',
       icon: 'i-lucide-circle-help',
-      content: 'For now, the mock flow assumes the specialist arrives prepared.'
+      content: 'Untuk saat ini, alur demo mengasumsikan spesialis datang dengan perlengkapan yang dibutuhkan.'
     }
   ],
   'laundry-pickup': [
     {
-      label: 'How fast is pickup arranged?',
+      label: 'Seberapa cepat penjemputan diatur?',
       icon: 'i-lucide-circle-help',
-      content: 'Pickup timing depends on your selected slot and area coverage.'
+      content: 'Waktu penjemputan bergantung pada slot yang Anda pilih dan cakupan area.'
     },
     {
-      label: 'Can I include special garment notes?',
+      label: 'Bisakah saya menambahkan catatan khusus untuk pakaian?',
       icon: 'i-lucide-circle-help',
-      content: 'Yes, notes can be added during the booking step.'
+      content: 'Ya, catatan dapat ditambahkan pada tahap pemesanan.'
     }
   ],
   'deep-cleaning': [
     {
-      label: 'Is this suitable for move-in cleaning?',
+      label: 'Apakah ini cocok untuk pembersihan sebelum pindah masuk?',
       icon: 'i-lucide-circle-help',
-      content: 'Yes, deep cleaning is positioned as a full-reset option for move-ins and major refreshes.'
+      content: 'Ya, deep cleaning diposisikan sebagai opsi pembersihan menyeluruh untuk pindahan dan penyegaran besar.'
     },
     {
-      label: 'Does the price change for larger spaces?',
+      label: 'Apakah harga berubah untuk ruangan yang lebih besar?',
       icon: 'i-lucide-circle-help',
-      content: 'The starting price shown is the base estimate; final backend rules can refine this later.'
+      content: 'Harga awal yang ditampilkan adalah estimasi dasar; aturan backend nantinya dapat menyesuaikan detail harga.'
     }
   ]
 }
@@ -102,12 +102,12 @@ const faqItems = computed(() => {
 
 const breadcrumbItems = computed(() => [
   {
-    label: 'Home',
+    label: 'Beranda',
     icon: 'i-lucide-house',
     to: '/'
   },
   {
-    label: 'Services',
+    label: 'Layanan',
     icon: 'i-lucide-briefcase-business',
     to: '/services'
   },
@@ -118,17 +118,17 @@ const breadcrumbItems = computed(() => [
 
 const tabItems = [
   {
-    label: 'Overview',
+    label: 'Ringkasan',
     icon: 'i-lucide-layout-panel-top',
     slot: 'overview'
   },
   {
-    label: 'Included',
+    label: 'Termasuk',
     icon: 'i-lucide-check-check',
     slot: 'included'
   },
   {
-    label: 'Process',
+    label: 'Proses',
     icon: 'i-lucide-list-ordered',
     slot: 'process'
   }
@@ -196,7 +196,7 @@ const tabItems = [
 
                     <div class="grid gap-4 sm:grid-cols-3">
                       <div class="rounded-2xl border border-neutral-200 px-4 py-4">
-                        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Starting price</p>
+                        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Harga mulai</p>
                         <p class="mt-2 text-lg font-semibold text-neutral-900">
                           Rp {{ service.priceFrom.toLocaleString('id-ID') }}
                         </p>
@@ -208,9 +208,9 @@ const tabItems = [
                         </p>
                       </div>
                       <div class="rounded-2xl border border-neutral-200 px-4 py-4">
-                        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Availability</p>
+                        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Ketersediaan</p>
                         <p class="mt-2 text-lg font-semibold text-neutral-900">
-                          Daily
+                          Setiap hari
                         </p>
                       </div>
                     </div>
@@ -251,7 +251,7 @@ const tabItems = [
 
             <UCard class="rounded-3xl">
               <template #header>
-                <p class="text-lg font-semibold text-neutral-900">Frequently asked questions</p>
+                <p class="text-lg font-semibold text-neutral-900">Pertanyaan yang sering diajukan</p>
               </template>
 
               <UAccordion :items="faqItems">
@@ -269,34 +269,34 @@ const tabItems = [
               <template #header>
                 <div class="flex items-start justify-between gap-4">
                   <div>
-                    <p class="text-lg font-semibold text-neutral-900">Book this service</p>
+                    <p class="text-lg font-semibold text-neutral-900">Pesan layanan ini</p>
                     <p class="mt-2 text-sm leading-6 text-neutral-600">
-                      Cleaner conversion panel with stronger visual confidence.
+                      Panel pemesanan yang lebih rapi dengan tampilan yang lebih meyakinkan.
                     </p>
                   </div>
 
                   <div class="rounded-full bg-[var(--tt-success-soft)] px-3 py-1 text-xs font-medium text-[var(--tt-success)]">
-                    Available
+                    Tersedia
                   </div>
                 </div>
               </template>
 
               <div class="space-y-4">
                 <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Starting price</p>
+                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Harga mulai</p>
                   <p class="mt-1 text-lg font-semibold text-neutral-900">
                     Rp {{ service.priceFrom.toLocaleString('id-ID') }}
                   </p>
                 </div>
 
                 <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Estimated visit</p>
-                  <p class="mt-1 text-sm font-medium text-neutral-900">2–4 hours</p>
+                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Estimasi kunjungan</p>
+                  <p class="mt-1 text-sm font-medium text-neutral-900">2–4 jam</p>
                 </div>
 
                 <div class="rounded-2xl border border-neutral-200 px-4 py-3">
-                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Service area</p>
-                  <p class="mt-1 text-sm font-medium text-neutral-900">City coverage enabled</p>
+                  <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Area layanan</p>
+                  <p class="mt-1 text-sm font-medium text-neutral-900">Cakupan kota tersedia</p>
                 </div>
 
                 <NuxtLink
@@ -304,14 +304,14 @@ const tabItems = [
                   class="inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-[var(--tt-brand)] px-4 py-3 text-sm font-medium text-white"
                 >
                   <UIcon name="i-lucide-calendar-plus-2" class="h-4 w-4" />
-                  <span>Continue booking</span>
+                  <span>Lanjutkan pemesanan</span>
                 </NuxtLink>
               </div>
             </UCard>
 
             <UCard class="rounded-3xl">
               <template #header>
-                <p class="text-lg font-semibold text-neutral-900">Assigned specialists</p>
+                <p class="text-lg font-semibold text-neutral-900">Spesialis yang ditugaskan</p>
               </template>
 
               <div class="space-y-4">
@@ -319,7 +319,7 @@ const tabItems = [
                   <UAvatar src="/images/avatars/demo-user.jpg" alt="Rachel Tan" size="lg" />
                   <div>
                     <p class="text-sm font-semibold text-neutral-900">Rachel Tan</p>
-                    <p class="text-xs text-neutral-500">Lead specialist</p>
+                    <p class="text-xs text-neutral-500">Spesialis utama</p>
                   </div>
                 </div>
 
@@ -327,7 +327,7 @@ const tabItems = [
                   <UAvatar src="/images/avatars/demo-user.jpg" alt="Noah Lee" size="lg" />
                   <div>
                     <p class="text-sm font-semibold text-neutral-900">Noah Lee</p>
-                    <p class="text-xs text-neutral-500">Service coordinator</p>
+                    <p class="text-xs text-neutral-500">Koordinator layanan</p>
                   </div>
                 </div>
               </div>
@@ -336,9 +336,9 @@ const tabItems = [
             <UCard class="rounded-3xl">
               <template #header>
                 <div>
-                  <p class="text-lg font-semibold text-neutral-900">Frequently asked questions</p>
+                  <p class="text-lg font-semibold text-neutral-900">Pertanyaan yang sering diajukan</p>
                   <p class="mt-2 text-sm leading-6 text-neutral-600">
-                    A small FAQ block makes the detail page feel more complete and more trustworthy.
+                    Blok FAQ kecil membuat halaman detail terasa lebih lengkap dan lebih terpercaya.
                   </p>
                 </div>
               </template>
@@ -346,8 +346,8 @@ const tabItems = [
               <UAccordion :items="faqItems" />
               <div class="space-y-5">
                 <div>
-                  <p class="eyebrow">Related services</p>
-                  <h2 class="section-title mt-4">Explore more options</h2>
+                  <p class="eyebrow">Layanan terkait</p>
+                  <h2 class="section-title mt-4">Jelajahi opsi lainnya</h2>
                 </div>
 
                 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -365,8 +365,8 @@ const tabItems = [
 
       <EmptyState
         v-else
-        title="Service not found"
-        description="This service page does not have matching mock data yet."
+        title="Layanan tidak ditemukan"
+        description="Halaman layanan ini belum memiliki data contoh yang sesuai."
       />
     </div>
   </section>

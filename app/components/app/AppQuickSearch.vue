@@ -16,34 +16,34 @@ defineShortcuts({
 const groups = computed(() => [
   {
     id: 'pages',
-    label: 'Pages',
+    label: 'Halaman',
     items: [
       {
-        label: 'Home',
+        label: 'Beranda',
         icon: 'i-lucide-house',
         suffix: '/',
         onSelect: () => go('/')
       },
       {
-        label: 'Services',
+        label: 'Layanan',
         icon: 'i-lucide-briefcase-business',
         suffix: '/services',
         onSelect: () => go('/services')
       },
       {
-        label: 'Dashboard',
+        label: 'Dasbor',
         icon: 'i-lucide-layout-dashboard',
         suffix: '/dashboard',
         onSelect: () => go('/dashboard')
       },
       {
-        label: 'Bookings',
+        label: 'Pemesanan',
         icon: 'i-lucide-calendar-days',
         suffix: '/bookings',
         onSelect: () => go('/bookings')
       },
       {
-        label: 'Profile',
+        label: 'Profil',
         icon: 'i-lucide-user-round',
         suffix: '/profile',
         onSelect: () => go('/profile')
@@ -52,39 +52,39 @@ const groups = computed(() => [
   },
   {
     id: 'services',
-    label: 'Service shortcuts',
+    label: 'Shortcut layanan',
     items: [
       {
-        label: 'Home Cleaning',
+        label: 'Pembersihan Rumah',
         icon: 'i-lucide-house',
-        suffix: 'Service',
+        suffix: 'Layanan',
         onSelect: () => go('/services/home-cleaning')
       },
       {
-        label: 'Laundry Pickup',
+        label: 'Penjemputan Laundry',
         icon: 'i-lucide-shirt',
-        suffix: 'Service',
+        suffix: 'Layanan',
         onSelect: () => go('/services/laundry-pickup')
       },
       {
-        label: 'Deep Cleaning',
+        label: 'Pembersihan Mendalam',
         icon: 'i-lucide-sparkles',
-        suffix: 'Service',
+        suffix: 'Layanan',
         onSelect: () => go('/services/deep-cleaning')
       }
     ]
   },
   {
     id: 'actions',
-    label: 'Actions',
+    label: 'Aksi',
     items: [
       {
-        label: 'Create new booking',
+        label: 'Buat pemesanan baru',
         icon: 'i-lucide-calendar-plus-2',
         onSelect: () => go('/bookings/new')
       },
       {
-        label: 'Confirm draft booking',
+        label: 'Konfirmasi draft pemesanan',
         icon: 'i-lucide-calendar-check-2',
         onSelect: () => go('/bookings/confirm')
       }
@@ -96,8 +96,8 @@ const groups = computed(() => [
 <template>
   <UModal
     v-model:open="open"
-    title="Quick search"
-    description="Jump to pages, services, and actions instantly."
+    title="Pencarian cepat"
+    description="Langsung menuju halaman, layanan, atau aksi dengan cepat."
     :ui="{ content: 'max-w-2xl' }"
   >
     <UButton
@@ -106,7 +106,7 @@ const groups = computed(() => [
       icon="i-lucide-search"
       class="rounded-2xl"
     >
-      Search
+      Cari
       <span class="ml-2 rounded-lg border border-neutral-200 px-2 py-0.5 text-xs text-neutral-500">
         ⌘K
       </span>
@@ -116,7 +116,7 @@ const groups = computed(() => [
       <UCommandPalette
         v-model:search-term="searchTerm"
         :groups="groups"
-        placeholder="Search pages, services, actions..."
+        placeholder="Cari halaman, layanan, atau aksi..."
         class="h-96"
       />
     </template>

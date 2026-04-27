@@ -5,8 +5,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Bookings - Tidy Tidys',
-  description: 'Review booking history and statuses.'
+  title: 'Pemesanan - Tidy Tidys',
+  description: 'Lihat riwayat dan status pemesanan Anda.'
 })
 
 const { data: bookings, pending } = await useFetch('/api/bookings')
@@ -15,48 +15,48 @@ const { data: bookings, pending } = await useFetch('/api/bookings')
 <template>
   <div class="space-y-8">
     <PageHeading
-      eyebrow="Bookings"
-      title="Your bookings"
-      description="A dedicated page for service history and current booking statuses."
+      eyebrow="Pemesanan"
+      title="Pemesanan Anda"
+      description="Halaman khusus untuk melihat riwayat layanan dan status pemesanan saat ini."
     />
 
     <div class="grid gap-6 xl:grid-cols-[0.95fr_1.05fr]">
-  <UCard class="rounded-3xl">
-    <template #header>
-      <div>
-        <p class="text-lg font-semibold text-neutral-900">Status summary</p>
-        <p class="mt-2 text-sm leading-6 text-neutral-600">
-          A cleaner overview before the full booking list.
-        </p>
-      </div>
-    </template>
+      <UCard class="rounded-3xl">
+        <template #header>
+          <div>
+            <p class="text-lg font-semibold text-white">Ringkasan status</p>
+            <p class="mt-2 text-sm leading-6 text-neutral-600">
+              Gambaran singkat sebelum melihat daftar pemesanan lengkap.
+            </p>
+          </div>
+        </template>
 
-    <div class="grid gap-4 sm:grid-cols-3">
-      <div class="rounded-2xl border border-neutral-200 px-4 py-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Confirmed</p>
-        <p class="mt-2 text-2xl font-semibold text-neutral-900">
-          {{ bookings?.filter(item => item.status === 'Confirmed').length || 0 }}
-        </p>
-      </div>
+        <div class="grid gap-4 sm:grid-cols-3">
+          <div class="rounded-2xl border border-neutral-200 px-4 py-4">
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Dikonfirmasi</p>
+            <p class="mt-2 text-2xl font-semibold text-neutral-900">
+              {{ bookings?.filter(item => item.status === 'Confirmed').length || 0 }}
+            </p>
+          </div>
 
-      <div class="rounded-2xl border border-neutral-200 px-4 py-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">In Progress</p>
-        <p class="mt-2 text-2xl font-semibold text-neutral-900">
-          {{ bookings?.filter(item => item.status === 'In Progress').length || 0 }}
-        </p>
-      </div>
+          <div class="rounded-2xl border border-neutral-200 px-4 py-4">
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Sedang diproses</p>
+            <p class="mt-2 text-2xl font-semibold text-neutral-900">
+              {{ bookings?.filter(item => item.status === 'In Progress').length || 0 }}
+            </p>
+          </div>
 
-      <div class="rounded-2xl border border-neutral-200 px-4 py-4">
-        <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Completed</p>
-        <p class="mt-2 text-2xl font-semibold text-neutral-900">
-          {{ bookings?.filter(item => item.status === 'Completed').length || 0 }}
-        </p>
-      </div>
+          <div class="rounded-2xl border border-neutral-200 px-4 py-4">
+            <p class="text-xs uppercase tracking-[0.18em] text-neutral-400">Selesai</p>
+            <p class="mt-2 text-2xl font-semibold text-neutral-900">
+              {{ bookings?.filter(item => item.status === 'Completed').length || 0 }}
+            </p>
+          </div>
+        </div>
+      </UCard>
+
+      <BookingTimeline />
     </div>
-  </UCard>
-
-  <BookingTimeline />
-</div>
 
     <div v-if="pending" class="grid gap-4">
       <div
@@ -71,8 +71,8 @@ const { data: bookings, pending } = await useFetch('/api/bookings')
 
     <div v-else-if="!bookings?.length">
       <EmptyState
-        title="No bookings yet"
-        description="Your booking history will appear here once you start requesting services."
+        title="Belum ada pemesanan"
+        description="Riwayat pemesanan Anda akan muncul di sini setelah Anda mulai memesan layanan."
       />
     </div>
 
@@ -84,7 +84,7 @@ const { data: bookings, pending } = await useFetch('/api/bookings')
       >
         <div class="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
-            <p class="text-sm font-semibold text-neutral-900">{{ booking.service }}</p>
+            <p class="text-sm font-semibold text-white">{{ booking.service }}</p>
             <p class="mt-1 text-sm text-neutral-500">
               {{ booking.id }} · {{ booking.date }} · {{ booking.time }}
             </p>
@@ -99,10 +99,16 @@ const { data: bookings, pending } = await useFetch('/api/bookings')
                 'bg-neutral-100 text-neutral-700': booking.status === 'Completed'
               }"
             >
-              {{ booking.status }}
+              {{
+                booking.status === 'Confirmed'
+                  ? 'Dikonfirmasi'
+                  : booking.status === 'In Progress'
+                  ? 'Sedang diproses'
+                  : 'Selesai'
+              }}
             </span>
 
-            <span class="text-sm font-medium text-neutral-900">
+            <span class="text-sm font-medium text-white">
               Rp {{ booking.price.toLocaleString('id-ID') }}
             </span>
           </div>

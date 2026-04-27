@@ -1,7 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Services - Tidy Tidys',
-  description: 'Browse and compare available services.'
+  title: 'Layanan - Tidy Tidys',
+  description: 'Jelajahi dan bandingkan layanan yang tersedia.'
 })
 
 const search = ref('')
@@ -9,8 +9,8 @@ const sort = ref('recommended')
 const activeCategory = ref('all')
 
 const categories = [
-  { label: 'All', value: 'all', icon: 'i-lucide-grid-2x2' },
-  { label: 'Home', value: 'home', icon: 'i-lucide-house' },
+  { label: 'Semua', value: 'all', icon: 'i-lucide-grid-2x2' },
+  { label: 'Rumah', value: 'home', icon: 'i-lucide-house' },
   { label: 'Laundry', value: 'laundry', icon: 'i-lucide-shirt' },
   { label: 'Premium', value: 'premium', icon: 'i-lucide-sparkles' }
 ]
@@ -49,9 +49,9 @@ const filteredServices = computed(() => {
   <section class="section-space">
     <div class="container-shell">
       <PageHeading
-        eyebrow="Browse services"
-        title="Choose the service you need"
-        description="Now with search and sorting so discovery feels more real."
+        eyebrow="Jelajahi layanan"
+        title="Pilih layanan yang Anda butuhkan"
+        description="Kini dengan fitur pencarian dan pengurutan agar pengalaman menjelajah terasa lebih nyata."
       />
 
       <div class="mt-8 flex flex-wrap gap-3">
@@ -74,7 +74,7 @@ const filteredServices = computed(() => {
       <div class="mt-8 grid gap-4 lg:grid-cols-[1fr_240px]">
         <UInput
           v-model="search"
-          placeholder="Search services"
+          placeholder="Cari layanan"
           size="lg"
         />
 
@@ -82,10 +82,10 @@ const filteredServices = computed(() => {
           v-model="sort"
           size="lg"
           :items="[
-            { label: 'Recommended', value: 'recommended' },
-            { label: 'Price: Low to High', value: 'price-asc' },
-            { label: 'Price: High to Low', value: 'price-desc' },
-            { label: 'Highest Rating', value: 'rating' }
+            { label: 'Rekomendasi', value: 'recommended' },
+            { label: 'Harga: Rendah ke Tinggi', value: 'price-asc' },
+            { label: 'Harga: Tinggi ke Rendah', value: 'price-desc' },
+            { label: 'Rating Tertinggi', value: 'rating' }
           ]"
         />
       </div>
@@ -105,8 +105,8 @@ const filteredServices = computed(() => {
 
       <div v-else-if="filteredServices.length === 0" class="mt-10">
         <EmptyState
-          title="No services matched your search"
-          description="Try a different keyword or reset the sort and search filters."
+          title="Tidak ada layanan yang cocok"
+          description="Coba kata kunci lain atau reset filter pencarian dan pengurutan."
         />
       </div>
 

@@ -4,8 +4,8 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Sign in - Tidy Tidys',
-  description: 'Access your account and manage bookings.'
+  title: 'Masuk - Tidy Tidys',
+  description: 'Akses akun Anda dan kelola pemesanan.'
 })
 
 const auth = useAuthStore()
@@ -36,24 +36,24 @@ function handleLogin() {
         </div>
 
         <div class="mt-16 max-w-xl">
-          <p class="text-xs uppercase tracking-[0.24em] text-white/50">Sign in experience</p>
+          <p class="text-xs uppercase tracking-[0.24em] text-white/50">Pengalaman masuk</p>
           <h1 class="mt-5 text-5xl font-semibold tracking-tight">
-            Clean access to a calmer booking product.
+            Akses yang lebih bersih untuk pengalaman pemesanan yang lebih tenang.
           </h1>
           <p class="mt-6 max-w-lg text-base leading-7 text-white/70">
-            This version removes the noisy, generic template feel and replaces it with a sharper, more premium product entry point.
+            Versi ini menghilangkan tampilan template yang ramai dan generik, digantikan dengan titik masuk produk yang lebih tajam dan premium.
           </p>
         </div>
       </div>
 
       <div class="grid gap-4">
         <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
-          <p class="text-sm font-medium">Cleaner hierarchy</p>
-          <p class="mt-2 text-sm text-white/65">Less visual noise, more focus.</p>
+          <p class="text-sm font-medium">Hierarki lebih rapi</p>
+          <p class="mt-2 text-sm text-white/65">Lebih sedikit distraksi, lebih fokus.</p>
         </div>
         <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
-          <p class="text-sm font-medium">Faster scanning</p>
-          <p class="mt-2 text-sm text-white/65">More confidence in every step.</p>
+          <p class="text-sm font-medium">Lebih cepat dipahami</p>
+          <p class="mt-2 text-sm text-white/65">Lebih percaya diri di setiap langkah.</p>
         </div>
       </div>
     </div>
@@ -73,17 +73,17 @@ function handleLogin() {
         </div>
 
         <div class="soft-card p-8">
-          <p class="eyebrow">Welcome back</p>
+          <p class="eyebrow">Selamat datang kembali</p>
           <h1 class="mt-4 text-3xl font-semibold tracking-tight text-neutral-900">
-            Sign in to continue
+            Masuk untuk melanjutkan
           </h1>
           <p class="mt-3 text-sm leading-6 text-neutral-600">
-            Use the demo credentials already filled below to enter the dashboard.
+            Gunakan kredensial demo yang sudah terisi di bawah untuk masuk ke dasbor.
           </p>
 
           <form class="mt-8 space-y-5" @submit.prevent="handleLogin">
             <div>
-              <label class="mb-2 block text-sm font-medium text-neutral-700">Email address</label>
+              <label class="mb-2 block text-sm font-medium text-neutral-700">Alamat email</label>
               <input
                 v-model="form.email"
                 type="email"
@@ -92,7 +92,7 @@ function handleLogin() {
             </div>
 
             <div>
-              <label class="mb-2 block text-sm font-medium text-neutral-700">Password</label>
+              <label class="mb-2 block text-sm font-medium text-neutral-700">Kata sandi</label>
               <input
                 v-model="form.password"
                 type="password"
@@ -104,12 +104,12 @@ function handleLogin() {
               type="submit"
               class="w-full rounded-2xl bg-neutral-900 px-4 py-3 text-sm font-medium text-white transition hover:opacity-90"
             >
-              Sign in
+              Masuk
             </button>
           </form>
 
           <p class="mt-5 text-xs text-neutral-500">
-            Demo mode only — real auth comes when backend integration starts.
+            Mode demo — autentikasi nyata akan tersedia setelah integrasi backend.
           </p>
         </div>
       </div>

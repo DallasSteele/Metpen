@@ -1,24 +1,24 @@
 <script setup lang="ts">
 const bundles = [
   {
-    title: 'Essential Care',
-    subtitle: 'For lighter routine needs',
+    title: 'Perawatan Esensial',
+    subtitle: 'Untuk kebutuhan rutin yang ringan',
     price: 'Rp 299.000',
-    features: ['Basic home care', 'Flexible time slots', 'Quick turnaround'],
+    features: ['Perawatan rumah dasar', 'Waktu fleksibel', 'Proses cepat'],
     highlight: false
   },
   {
-    title: 'Premium Reset',
-    subtitle: 'For a fuller, deeper service pass',
+    title: 'Reset Premium',
+    subtitle: 'Untuk layanan yang lebih menyeluruh dan mendalam',
     price: 'Rp 649.000',
-    features: ['Deep cleaning', 'Priority scheduling', 'Assigned specialist'],
+    features: ['Pembersihan mendalam', 'Penjadwalan prioritas', 'Spesialis khusus'],
     highlight: true
   },
   {
-    title: 'Business Care',
-    subtitle: 'For recurring operational requests',
-    price: 'Custom quote',
-    features: ['Custom scope', 'Coordinated schedule', 'Dedicated handling'],
+    title: 'Perawatan Bisnis',
+    subtitle: 'Untuk kebutuhan operasional berulang',
+    price: 'Harga khusus',
+    features: ['Ruang lingkup kustom', 'Jadwal terkoordinasi', 'Penanganan khusus'],
     highlight: false
   }
 ]
@@ -28,10 +28,10 @@ const bundles = [
   <section class="pb-20 lg:pb-28">
     <div class="container-shell">
       <div class="mb-10 max-w-2xl">
-        <p class="eyebrow">Packages</p>
-        <h2 class="section-title mt-4">More commercial content, without the cheap look</h2>
+        <p class="eyebrow">Paket</p>
+        <h2 class="section-title mt-4">Konten komersial yang lebih kuat tanpa terlihat murahan</h2>
         <p class="body-muted mt-4">
-          These cards add business-facing depth and make the product feel more complete.
+          Kartu ini menambahkan kedalaman dari sisi bisnis dan membuat produk terasa lebih lengkap.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ const bundles = [
             v-if="bundle.highlight"
             class="mb-4 inline-flex rounded-full bg-[var(--tt-brand-soft)] px-3 py-1 text-xs font-medium text-[var(--tt-brand)]"
           >
-            Most popular
+            Paling populer
           </div>
 
           <p class="text-sm text-neutral-500">{{ bundle.subtitle }}</p>
@@ -80,7 +80,7 @@ const bundles = [
                 : 'border border-neutral-300 bg-white text-neutral-900'
             ]"
           >
-            <span>Explore package</span>
+            <span>Jelajahi paket</span>
             <UIcon name="i-lucide-arrow-right" class="h-4 w-4" />
           </NuxtLink>
         </div>
